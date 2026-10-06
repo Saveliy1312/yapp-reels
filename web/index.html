@@ -75,6 +75,7 @@ const dayKey = (d) => new Intl.DateTimeFormat('sv-SE', { timeZone: TZ }).format(
 const fmtTime = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(d);
 const fmtDay = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'long' }).format(d);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const cleanTitle = (t) => t.replace(/^\d+ · /, '');
 const plural = (n) => n % 10 === 1 && n % 100 !== 11 ? 'рилс' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'рилса' : 'рилсов';
 
 let showPast = false;
@@ -111,7 +112,7 @@ function render(queue, st) {
 
   const next = items.find((i) => !st[i.id]);
   document.getElementById('next').innerHTML = next
-    ? `Следующий: <b>${esc(fmtDay(next.date))}, ${fmtTime(next.date)}</b> - ${esc(next.title)}`
+    ? `Следующий: <b>${esc(fmtDay(next.date))}, ${fmtTime(next.date)}</b> - ${esc(cleanTitle(next.title))}`
     : 'Очередь пуста - пора добавить новую партию.';
 
   const today = dayKey(now);
@@ -130,7 +131,7 @@ function render(queue, st) {
           <span class="time">${fmtTime(i.date)}</span>
           <img class="cover" loading="lazy" src="media/${encodeURIComponent(i.media)}.png" alt="" onerror="this.style.visibility='hidden'">
           <div>
-            <div class="title">${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(i.title.replace(/^\d+ · /, ''))}</div>
+            <div class="title">${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(cleanTitle(i.title))}</div>
             <details><summary>подпись</summary><p>${esc(i.caption)}</p></details>
           </div>
           <span class="badge-cell">${status(i, st)}</span>
