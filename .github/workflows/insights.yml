@@ -1,0 +1,32 @@
+name: Статистика Instagram
+
+# Раз в день сохраняет метрики последних 50 постов we_yapp в state/insights.json и state/insights.md.
+# Нужно право instagram_business_manage_insights у секрета IG_TOKEN.
+on:
+  schedule:
+    - cron: '50 2 * * *'   # 05:50 МСК, не пересекается с публикацией в :05 и :35
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Собрать статистику
+        run: node scripts/publish.mjs insights
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      - name: Сохранить
+        run: |
+          git config user.name "yapp-reels-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/insights.json state/insights.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Статистика Instagram: $(date -u +%F)"
+          git pull --rebase && git push
