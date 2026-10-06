@@ -5,7 +5,7 @@ name: Ролики и обложки на GitHub Pages
 on:
   push:
     branches: [main]
-    paths: [queue.json]
+    paths: [queue.json, web/**]
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p site/media
-          echo '<!doctype html><meta charset="utf-8"><title>yapp-reels</title>Файлы для автопубликации рилсов Yapp.' > site/index.html
+          cp web/index.html site/index.html
           node -e '
             const q = require("./queue.json"), s = require("./state/published.json");
             const keep = q.filter(i => !s[i.id] || Date.now() - new Date(i.at) < 2*864e5).map(i => i.media);

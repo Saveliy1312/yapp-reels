@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Очередь рилсов Yapp</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --card: #fff; --text: #1c1c1e; --muted: #6b6b70; --line: #e4e4e0;
+    --ok: #1f8a4c; --ok-bg: #e5f4ea; --wait: #8a5a00; --wait-bg: #fdf1d8; --bad: #b3261e; --bad-bg: #fbe4e2;
+    --accent: #3f51b5; --series: #f3e8ff; --series-text: #6b21a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214; --card: #1c1c1f; --text: #ececee; --muted: #9a9aa2; --line: #2c2c31;
+      --ok: #6fd39a; --ok-bg: #16301f; --wait: #f0c060; --wait-bg: #33280f; --bad: #ff8a80; --bad-bg: #3a1714;
+      --accent: #9fa8ff; --series: #2d1b45; --series-text: #d8b4fe;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .next { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 20px; }
+  .toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .toolbar label { color: var(--muted); font-size: 14px; display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .day { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 14px; overflow: hidden; }
+  .day-head { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .day-head h2 { font-size: 16px; margin: 0; }
+  .day-head .count { color: var(--muted); font-size: 14px; }
+  .today .day-head h2::after { content: " · сегодня"; color: var(--accent); }
+  .row { display: grid; grid-template-columns: 52px 44px 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .time { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .cover { width: 44px; height: 78px; border-radius: 6px; object-fit: cover; background: var(--line); }
+  .title { font-weight: 500; }
+  .series { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 99px; background: var(--series); color: var(--series-text); margin-right: 6px; }
+  details summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  details p { white-space: pre-wrap; margin: 6px 0 0; font-size: 13px; }
+  .badge { font-size: 13px; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
+  .published { background: var(--ok-bg); color: var(--ok); }
+  .waiting { background: var(--wait-bg); color: var(--wait); }
+  .missed { background: var(--bad-bg); color: var(--bad); }
+  a { color: var(--accent); }
+  .err { color: var(--bad); }
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .row { grid-template-columns: 44px 1fr; }
+    .row .time { grid-column: 1; }
+    .row .cover { display: none; }
+    .row .badge-cell { grid-column: 2; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Очередь рилсов Yapp</h1>
+  <p class="sub">@we_yapp · время московское · рилсы, которые выкладывает автопубликация (то, что запланировано вручную в Meta Business Suite, здесь не видно)</p>
+  <div class="stats" id="stats"></div>
+  <div class="next" id="next"></div>
+  <div class="toolbar">
+    <label><input type="checkbox" id="showPast"> показать прошедшие дни</label>
+  </div>
+  <div id="days"><p class="sub">Загружаю очередь…</p></div>
+</main>
+<script>
+const RAW = 'https://raw.githubusercontent.com/Saveliy1312/yapp-reels/main/';
+const TZ = 'Europe/Moscow';
+const dayKey = (d) => new Intl.DateTimeFormat('sv-SE', { timeZone: TZ }).format(d);
+const fmtTime = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(d);
+const fmtDay = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'long' }).format(d);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const plural = (n) => n % 10 === 1 && n % 100 !== 11 ? 'рилс' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'рилса' : 'рилсов';
+
+let showPast = false;
+try { showPast = localStorage.getItem('showPast') === '1'; } catch {}
+const box = document.getElementById('showPast');
+box.checked = showPast;
+
+async function load() {
+  const bust = '?t=' + Date.now();
+  const [queue, state] = await Promise.all([
+    fetch(RAW + 'queue.json' + bust).then((r) => r.json()),
+    fetch(RAW + 'state/published.json' + bust).then((r) => r.json()),
+  ]);
+  render(queue, state);
+}
+
+function status(item, st) {
+  const s = st[item.id];
+  if (s?.status === 'published') return `<span class="badge published">${s.permalink ? `<a href="${esc(s.permalink)}" target="_blank" rel="noopener">вышел ↗</a>` : 'вышел'}</span>`;
+  if (s?.status === 'missed') return '<span class="badge missed">пропущен</span>';
+  return '<span class="badge waiting">запланирован</span>';
+}
+
+function render(queue, st) {
+  const now = new Date();
+  const items = queue.map((q) => ({ ...q, date: new Date(q.at) })).sort((a, b) => a.date - b.date);
+  const pub = items.filter((i) => st[i.id]?.status === 'published').length;
+  const missed = items.filter((i) => st[i.id]?.status === 'missed').length;
+  const wait = items.length - pub - missed;
+  const lastDay = items.length ? fmtDay(items.at(-1).date) : '-';
+  document.getElementById('stats').innerHTML = [
+    [wait, 'ждут выхода'], [pub, 'вышло'], [missed, 'пропущено'], [lastDay, 'последний день очереди'],
+  ].map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${l}</span></div>`).join('');
+
+  const next = items.find((i) => !st[i.id]);
+  document.getElementById('next').innerHTML = next
+    ? `Следующий: <b>${esc(fmtDay(next.date))}, ${fmtTime(next.date)}</b> - ${esc(next.title)}`
+    : 'Очередь пуста - пора добавить новую партию.';
+
+  const today = dayKey(now);
+  const groups = new Map();
+  for (const i of items) {
+    const k = dayKey(i.date);
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(i);
+  }
+  const html = [...groups].filter(([k]) => showPast || k >= today).map(([k, list]) => `
+    <section class="day${k === today ? ' today' : ''}">
+      <div class="day-head"><h2>${esc(fmtDay(list[0].date))}</h2><span class="count">${list.length} ${plural(list.length)}</span></div>
+      ${list.map((i) => {
+        const isSeries = /^Серия/.test(i.title);
+        return `<div class="row">
+          <span class="time">${fmtTime(i.date)}</span>
+          <img class="cover" loading="lazy" src="media/${encodeURIComponent(i.media)}.png" alt="" onerror="this.style.visibility='hidden'">
+          <div>
+            <div class="title">${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(i.title.replace(/^\d+ · /, ''))}</div>
+            <details><summary>подпись</summary><p>${esc(i.caption)}</p></details>
+          </div>
+          <span class="badge-cell">${status(i, st)}</span>
+        </div>`;
+      }).join('')}
+    </section>`).join('');
+  document.getElementById('days').innerHTML = html || '<p class="sub">Впереди ничего не запланировано.</p>';
+}
+
+box.addEventListener('change', () => {
+  showPast = box.checked;
+  try { localStorage.setItem('showPast', showPast ? '1' : '0'); } catch {}
+  load();
+});
+load().catch((e) => { document.getElementById('days').innerHTML = `<p class="err">Не удалось загрузить очередь: ${esc(e.message)}</p>`; });
+</script>
+</body>
+</html>
