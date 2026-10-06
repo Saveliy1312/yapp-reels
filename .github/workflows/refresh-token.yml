@@ -1,0 +1,28 @@
+name: Продление токена Instagram
+
+# Токен Instagram живёт 60 дней. Раз в неделю продлеваем его и обновляем секрет IG_TOKEN.
+# Для записи секрета нужен секрет GH_PAT: fine-grained токен GitHub на этот репозиторий с правом Secrets: Read and write.
+on:
+  schedule:
+    - cron: '20 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Продлить
+        run: node scripts/publish.mjs refresh
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          TOKEN_OUT: ${{ runner.temp }}/t
+      - name: Обновить секрет
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета GH_PAT - токен продлён, но секрет не обновлён. Через 60 дней от выдачи токена нужен новый."; exit 0; fi
+          gh secret set IG_TOKEN -R "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/t"
