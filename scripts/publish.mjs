@@ -15,6 +15,7 @@ const log = (...a) => console.log(new Date().toISOString(), ...a);
 const summary = (line) => process.env.GITHUB_STEP_SUMMARY && appendFileSync(process.env.GITHUB_STEP_SUMMARY, line + '\n');
 
 async function ig(method, path, params = {}) {
+  if (!TOKEN) throw new Error('нет секрета IG_TOKEN');
   const url = new URL(API + path);
   const body = new URLSearchParams({ ...params, access_token: TOKEN });
   const res = method === 'GET'
@@ -119,6 +120,7 @@ async function check() {
 
 // Продлевает 60-дневный токен; новый токен печатается в файл для обновления секрета.
 async function refresh() {
+  if (!TOKEN) throw new Error('нет секрета IG_TOKEN');
   const res = await fetch(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN}`);
   const json = await res.json();
   if (!json.access_token) throw new Error('refresh: ' + JSON.stringify(json.error || json));
@@ -126,6 +128,5 @@ async function refresh() {
   log(`токен продлён на ${Math.round(json.expires_in / 86400)} дн.`);
 }
 
-if (!TOKEN) { console.error('Нет IG_TOKEN'); process.exit(1); }
 const cmd = process.argv[2] || 'publish';
 await ({ publish, check, refresh }[cmd])();
