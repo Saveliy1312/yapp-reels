@@ -37,7 +37,20 @@
   .row { display: grid; grid-template-columns: 52px 44px 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
   .row:first-of-type { border-top: 0; }
   .time { font-variant-numeric: tabular-nums; font-weight: 600; }
-  .cover { width: 44px; height: 78px; border-radius: 6px; object-fit: cover; background: var(--line); }
+  .cover { position: relative; width: 44px; height: 78px; padding: 0; border: 0; border-radius: 6px; overflow: hidden; background: var(--line); cursor: pointer; }
+  .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .cover::after { content: "▶"; position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 16px; background: rgba(0,0,0,.25); opacity: .85; transition: opacity .15s; }
+  .cover:hover::after, .cover:focus-visible::after { opacity: 1; background: rgba(0,0,0,.4); }
+  dialog { border: 0; padding: 0; border-radius: 16px; background: var(--card); color: var(--text); width: min(420px, calc(100vw - 32px)); max-height: calc(100vh - 32px); overflow: auto; }
+  dialog::backdrop { background: rgba(0,0,0,.7); }
+  dialog video { display: block; width: 100%; max-height: 70vh; aspect-ratio: 9 / 16; background: #000; }
+  .dlg-body { padding: 12px 14px 14px; }
+  .dlg-head { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+  .dlg-head b { font-size: 15px; }
+  .dlg-when { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+  .dlg-close { border: 0; background: var(--line); color: var(--text); border-radius: 99px; width: 30px; height: 30px; font-size: 16px; cursor: pointer; flex: none; }
+  .dlg-caption { white-space: pre-wrap; font-size: 13px; margin: 0; }
+  .dlg-missing { padding: 40px 16px; text-align: center; color: var(--muted); background: var(--bg); }
   .title { font-weight: 500; }
   .series { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 99px; background: var(--series); color: var(--series-text); margin-right: 6px; }
   details summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-top: 2px; }
@@ -50,10 +63,9 @@
   .err { color: var(--bad); }
   @media (max-width: 560px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .row { grid-template-columns: 44px 1fr; }
-    .row .time { grid-column: 1; }
-    .row .cover { display: none; }
-    .row .badge-cell { grid-column: 2; }
+    .row { grid-template-columns: 40px 36px 1fr; gap: 10px; }
+    .row .cover { width: 36px; height: 64px; }
+    .row .badge-cell { grid-column: 3; }
   }
 </style>
 </head>
@@ -68,6 +80,14 @@
   </div>
   <div id="days"><p class="sub">Загружаю очередь…</p></div>
 </main>
+<dialog id="player">
+  <div id="dlg-media"></div>
+  <div class="dlg-body">
+    <div class="dlg-head"><b id="dlg-title"></b><button class="dlg-close" id="dlg-close" aria-label="Закрыть">✕</button></div>
+    <div class="dlg-when" id="dlg-when"></div>
+    <p class="dlg-caption" id="dlg-caption"></p>
+  </div>
+</dialog>
 <script>
 const RAW = 'https://raw.githubusercontent.com/Saveliy1312/yapp-reels/main/';
 const TZ = 'Europe/Moscow';
@@ -99,9 +119,37 @@ function status(item, st) {
   return '<span class="badge waiting">запланирован</span>';
 }
 
+let current = { items: [], st: {} };
+const dlg = document.getElementById('player');
+const media = document.getElementById('dlg-media');
+
+function openPlayer(id) {
+  const i = current.items.find((x) => x.id === id);
+  if (!i) return;
+  const s = current.st[i.id];
+  const enc = encodeURIComponent(i.media);
+  document.getElementById('dlg-title').textContent = cleanTitle(i.title);
+  document.getElementById('dlg-when').innerHTML = `${esc(fmtDay(i.date))}, ${fmtTime(i.date)} · ${status(i, current.st)}`;
+  document.getElementById('dlg-caption').textContent = i.caption;
+  media.innerHTML = `<video controls playsinline autoplay preload="metadata" poster="media/${enc}.png" src="media/${enc}.mp4"></video>`;
+  media.querySelector('video').addEventListener('error', () => {
+    media.innerHTML = `<div class="dlg-missing">Видео уже убрано с сайта после выхода.${s?.permalink ? `<br><a href="${esc(s.permalink)}" target="_blank" rel="noopener">Смотреть в Instagram ↗</a>` : ''}</div>`;
+  });
+  dlg.showModal();
+}
+function closePlayer() { dlg.close(); }
+dlg.addEventListener('close', () => { media.innerHTML = ''; });
+dlg.addEventListener('click', (e) => { if (e.target === dlg) closePlayer(); });
+document.getElementById('dlg-close').addEventListener('click', closePlayer);
+document.getElementById('days').addEventListener('click', (e) => {
+  const b = e.target.closest('.cover');
+  if (b) openPlayer(b.dataset.id);
+});
+
 function render(queue, st) {
   const now = new Date();
   const items = queue.map((q) => ({ ...q, date: new Date(q.at) })).sort((a, b) => a.date - b.date);
+  current = { items, st };
   const pub = items.filter((i) => st[i.id]?.status === 'published').length;
   const missed = items.filter((i) => st[i.id]?.status === 'missed').length;
   const wait = items.length - pub - missed;
@@ -129,7 +177,7 @@ function render(queue, st) {
         const isSeries = /^Серия/.test(i.title);
         return `<div class="row">
           <span class="time">${fmtTime(i.date)}</span>
-          <img class="cover" loading="lazy" src="media/${encodeURIComponent(i.media)}.png" alt="" onerror="this.style.visibility='hidden'">
+          <button class="cover" data-id="${esc(i.id)}" aria-label="Смотреть: ${esc(cleanTitle(i.title))}"><img loading="lazy" src="media/thumbs/${encodeURIComponent(i.media)}.jpg" alt="" onerror="this.onerror=null;this.src='media/${encodeURIComponent(i.media)}.png'"></button>
           <div>
             <div class="title">${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(cleanTitle(i.title))}</div>
             <details><summary>подпись</summary><p>${esc(i.caption)}</p></details>

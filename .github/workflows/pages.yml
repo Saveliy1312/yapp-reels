@@ -41,6 +41,10 @@ jobs:
               gh release download "$tag" -D site/media -p "$m.mp4" -p "$m.png" --skip-existing 2>/dev/null || true
             done < keep.txt
           done
+          # лёгкие миниатюры обложек для списка (оригиналы PNG по 1-2 МБ остаются для Instagram и плеера)
+          command -v convert >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick; }
+          mkdir -p site/media/thumbs
+          for f in site/media/*.png; do convert "$f" -resize 180x -quality 80 "site/media/thumbs/$(basename "${f%.png}").jpg"; done
           ls site/media | wc -l
           du -sh site
       - uses: actions/upload-pages-artifact@v3
