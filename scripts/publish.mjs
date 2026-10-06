@@ -118,6 +118,18 @@ async function check() {
   if (bad) process.exitCode = 1;
 }
 
+// Пробный прогон: Instagram забирает ближайший ролик и обложку и обрабатывает их, но пост не публикуется
+// (неопубликованный контейнер нигде не виден и сам удаляется через 24 часа).
+async function probe() {
+  const queue = JSON.parse(readFileSync('queue.json', 'utf8'));
+  const state = loadState();
+  const item = queue.filter((q) => !state[q.id]).sort((a, b) => new Date(a.at) - new Date(b.at))[0];
+  if (!item) return log('очередь пуста');
+  const id = await prepare(item);
+  log(`ОК: ${item.title} принят и обработан Instagram (контейнер ${id}), публикации не было`);
+  summary(`- 🧪 ${item.title}: Instagram принял видео и обложку, пост не публиковался`);
+}
+
 // Продлевает 60-дневный токен; новый токен печатается в файл для обновления секрета.
 async function refresh() {
   if (!TOKEN) throw new Error('нет секрета IG_TOKEN');
@@ -129,4 +141,4 @@ async function refresh() {
 }
 
 const cmd = process.argv[2] || 'publish';
-await ({ publish, check, refresh }[cmd])();
+await ({ publish, check, probe, refresh }[cmd])();

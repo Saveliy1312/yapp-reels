@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'publish - выложить то, что пора; check - проверить токен и файлы'
+        description: 'publish - выложить то, что пора; check - проверить токен и файлы; probe - пробно отдать ближайший ролик в Instagram без публикации'
         default: check
         type: choice
-        options: [check, publish]
+        options: [check, probe, publish]
 
 permissions:
   contents: write
