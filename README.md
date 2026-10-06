@@ -29,10 +29,17 @@
 Правила расписания сериалов - в [docs/КАК-ВЫКЛАДЫВАТЬ-СЕРИАЛЫ.md](docs/КАК-ВЫКЛАДЫВАТЬ-СЕРИАЛЫ.md): одна серия в день в одно время, между сериями
 минимум 2 обычных ролика, соседние обычные ролики - разных рубрик и цветов обложки.
 
+## Статистика
+
+Workflow «Статистика Instagram» каждый день в 05:50 МСК сохраняет метрики последних 50 постов: просмотры, охват,
+сохранения, репосты, средний досмотр рилса и во сколько раз пост обошёл медиану своего типа.
+Читать - [state/insights.md](state/insights.md), данные для скриптов и Claude - `state/insights.json`
+(там же история числа подписчиков). Запустить вне расписания: Actions → «Статистика Instagram» → Run workflow.
+
 ## Секреты (Settings → Secrets and variables → Actions)
 
-- `IG_TOKEN` - токен Instagram API with Instagram Login для we_yapp с правами `instagram_business_basic`
-  и `instagram_business_content_publish`. Живёт 60 дней.
+- `IG_TOKEN` - токен Instagram API with Instagram Login для we_yapp с правами `instagram_business_basic`,
+  `instagram_business_content_publish` и `instagram_business_manage_insights` (для статистики). Живёт 60 дней.
 - `GH_PAT` (по желанию) - fine-grained токен GitHub только на этот репозиторий с правом **Secrets: Read and write**.
   С ним workflow «Продление токена Instagram» каждый понедельник сам продлевает `IG_TOKEN`. Без него токен нужно
   перевыпускать вручную раз в 60 дней.
