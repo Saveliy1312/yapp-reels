@@ -6,8 +6,6 @@ on:
   push:
     branches: [main]
     paths: [queue.json]
-  release:
-    types: [published, edited]
   workflow_dispatch:
 
 permissions:
