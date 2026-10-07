@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T23:18:30.090Z",
+  "updated_at": "2026-10-07T02:58:56.341Z",
   "username": "we_yapp",
   "followers_count": 15,
   "median_views": {
@@ -10,6 +10,10 @@
   "followers": [
     {
       "date": "2026-10-06",
+      "count": 15
+    },
+    {
+      "date": "2026-10-07",
       "count": 15
     }
   ],
@@ -28,9 +32,9 @@
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 5817,
-      "ig_reels_video_view_total_time": 58178,
-      "avg_watch_s": 5.8,
+      "ig_reels_avg_watch_time": 5570,
+      "ig_reels_video_view_total_time": 61279,
+      "avg_watch_s": 5.6,
       "outlier": 0.3
     },
     {
@@ -58,17 +62,17 @@
       "at": "2026-10-06T17:01:08+0000",
       "permalink": "https://www.instagram.com/reel/DeKRXtsD81D/",
       "title": "Собеседник говорит без остановки, а тебе есть что сказать?",
-      "views": 47,
-      "reach": 42,
+      "views": 149,
+      "reach": 143,
       "saved": 0,
       "shares": 0,
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6654,
-      "ig_reels_video_view_total_time": 292810,
-      "avg_watch_s": 6.7,
-      "outlier": 1.5
+      "ig_reels_avg_watch_time": 5228,
+      "ig_reels_video_view_total_time": 747702,
+      "avg_watch_s": 5.2,
+      "outlier": 4.7
     },
     {
       "id": "18073394498495692",
@@ -78,7 +82,7 @@
       "permalink": "https://www.instagram.com/reel/DeKDpyelq-b/",
       "title": "Одно и то же - разными словами 🇬🇧🇺🇸",
       "views": 123,
-      "reach": 108,
+      "reach": 109,
       "saved": 0,
       "shares": 0,
       "likes": 7,
@@ -424,8 +428,8 @@
       "likes": 5,
       "comments": 0,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 6483,
-      "ig_reels_video_view_total_time": 1867357,
+      "ig_reels_avg_watch_time": 6463,
+      "ig_reels_video_view_total_time": 1868008,
       "avg_watch_s": 6.5,
       "outlier": 10.8
     }
