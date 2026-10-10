@@ -40,6 +40,10 @@ Workflow «Статистика Instagram» каждый день в 05:50 МС�
 Читать - [state/insights.md](state/insights.md), данные для скриптов и Claude - `state/insights.json`
 (там же история числа подписчиков). Запустить вне расписания: Actions → «Статистика Instagram» → Run workflow.
 
+Threads - так же, workflow «Статистика Threads» в 05:55 МСК: [state/threads-insights.md](state/threads-insights.md) и `state/threads-insights.json`
+(просмотры, лайки, ответы, репосты, цитаты, «поделились», x медианы, тип поста из очереди, история подписчиков).
+Нужно право `threads_manage_insights` у `TH_TOKEN`.
+
 ## Threads
 
 Посты в Threads идут из `threads.json` так же, как рилсы: workflow «Публикация в Threads» запускается каждые полчаса

@@ -1,5 +1,5 @@
 // Публикует посты из threads.json в Threads через официальный Threads API.
-// Запуск: node scripts/threads.mjs [publish|check|refresh|exchange]
+// Запуск: node scripts/threads.mjs [publish|check|refresh|exchange|insights]
 // Переменные: TH_TOKEN (токен Threads we_yapp), MEDIA_BASE (адрес GitHub Pages с картинками),
 // для exchange - TH_APP_SECRET (секрет Meta-приложения, только локально).
 import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
@@ -199,5 +199,92 @@ async function exchange() {
   log(`долгий токен на ${Math.round(json.expires_in / 86400)} дн. записан в ${process.env.TOKEN_OUT || '.new-token'}`);
 }
 
+// Статистика последних постов профиля: state/threads-insights.json (для скриптов и Claude) и .md (для людей).
+// Нужно право threads_manage_insights у TH_TOKEN.
+const INSIGHTS = 'state/threads-insights';
+const METRICS = ['views', 'likes', 'replies', 'reposts', 'quotes', 'shares'];
+const value = (d) => d.total_value?.value ?? d.values?.[0]?.value ?? null;
+
+async function postInsights(id) {
+  const read = async (list) => {
+    const { data = [] } = await th('GET', `/${id}/insights`, { metric: list.join(',') });
+    return Object.fromEntries(data.map((d) => [d.name, value(d)]));
+  };
+  try {
+    return await read(METRICS);
+  } catch (e) {
+    if (/"code":(10|200)\b|permission/i.test(e.message)) {
+      throw new Error('у TH_TOKEN нет права threads_manage_insights - выпусти токен заново с этим правом');
+    }
+    // Какую-то метрику Threads не отдаёт для этого поста - собираем по одной, пропуская неподдерживаемые.
+    const out = {};
+    for (const k of METRICS) Object.assign(out, await read([k]).catch(() => ({})));
+    return out;
+  }
+}
+
+const median = (xs) => {
+  const s = xs.filter((x) => x != null).sort((a, b) => a - b);
+  return s.length ? (s[(s.length - 1) >> 1] + s[s.length >> 1]) / 2 : null;
+};
+const msk = (t) => new Date(t).toLocaleString('ru-RU', {
+  timeZone: 'Europe/Moscow', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
+});
+
+async function insights() {
+  const me = await th('GET', '/me', { fields: 'id,username' });
+  const { data: media = [] } = await th('GET', '/me/threads', { fields: 'id,text,media_type,timestamp,permalink', limit: '50' });
+  const queue = Object.fromEntries(load(QUEUE).map((q) => [q.id, q]));
+  const byMedia = Object.fromEntries(Object.entries(load(STATE))
+    .filter(([, s]) => s.media_id).map(([id, s]) => [s.media_id, id]));
+
+  const posts = [];
+  for (const m of media) {
+    const q = queue[byMedia[m.id]];
+    const type = q?.poll ? 'poll' : q?.replies ? 'thread' : m.media_type === 'CAROUSEL_ALBUM' ? 'carousel'
+      : m.media_type === 'IMAGE' ? 'image' : 'post';
+    posts.push({
+      id: m.id, queue_id: q?.id || null, type, at: m.timestamp, permalink: m.permalink,
+      title: q ? title(q) : firstLine(m.text).slice(0, 60),
+      ...(await postInsights(m.id)),
+    });
+  }
+
+  // Свежие посты ещё набирают просмотры, поэтому медиана - по постам старше 48 часов.
+  const settled = (p) => Date.now() - new Date(p.at) > 48 * 3600_000;
+  const base = median(posts.filter(settled).map((p) => p.views));
+  for (const p of posts) p.outlier = p.views != null && base ? Math.round((p.views / base) * 10) / 10 : null;
+
+  let count = null;
+  try {
+    const { data = [] } = await th('GET', `/${me.id}/threads_insights`, { metric: 'followers_count' });
+    count = value(data[0] || {});
+  } catch (e) { log('подписчики:', e.message); }
+  let followers = [];
+  try { followers = load(INSIGHTS + '.json').followers || []; } catch {}
+  const today = new Date().toISOString().slice(0, 10);
+  if (count != null) followers = [...followers.filter((f) => f.date !== today), { date: today, count }];
+
+  const updated = new Date().toISOString();
+  writeFileSync(INSIGHTS + '.json', JSON.stringify({
+    updated_at: updated, username: me.username, followers_count: count, median_views: base, followers, posts,
+  }, null, 2) + '\n');
+
+  const n = (x) => (x == null ? '-' : x);
+  const md = [
+    `# Статистика Threads @${me.username}`, '',
+    `Обновлено ${msk(updated)} МСК. Подписчиков: ${n(count)}. Медиана просмотров (посты старше 48 ч): ${n(base)}.`,
+    '«x медианы» - во сколько раз пост обошёл обычный пост. * - вышел меньше 48 ч назад, ещё набирает.',
+    'Тип: post - текст, poll - опрос, thread - тред с продолжением (цифры только по первому посту).', '',
+    '| Вышел (МСК) | Тип | Просмотры | x медианы | Лайки | Ответы | Репосты | Цитаты | Поделились | Пост |',
+    '| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |',
+    ...posts.map((p) => `| ${msk(p.at)}${settled(p) ? '' : '*'} | ${p.type} | ${n(p.views)} | ${n(p.outlier)} | ${n(p.likes)} | ` +
+      `${n(p.replies)} | ${n(p.reposts)} | ${n(p.quotes)} | ${n(p.shares)} | [${p.title.replace(/[|[\]]/g, ' ').slice(0, 60)}](${p.permalink}) |`),
+  ].join('\n') + '\n';
+  writeFileSync(INSIGHTS + '.md', md);
+  log(`статистика Threads: ${posts.length} постов, подписчиков ${n(count)}`);
+  summary(`Статистика Threads: ${posts.length} постов, подписчиков ${n(count)}, медиана просмотров ${n(base)}`);
+}
+
 const cmd = process.argv[2] || 'publish';
-await ({ publish, check, refresh, exchange }[cmd])();
+await ({ publish, check, refresh, exchange, insights }[cmd])();
