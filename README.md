@@ -1,6 +1,7 @@
 # yapp-reels
 
-Автопубликация рилсов Yapp в Instagram (@we_yapp) по расписанию через официальный Instagram API.
+Автопубликация рилсов Yapp в Instagram (@we_yapp) по расписанию через официальный Instagram API,
+а также постов в Threads (@we_yapp) через Threads API - см. раздел [Threads](#threads).
 
 ## Как это работает
 
@@ -39,6 +40,48 @@ Workflow «Статистика Instagram» каждый день в 05:50 МС�
 Читать - [state/insights.md](state/insights.md), данные для скриптов и Claude - `state/insights.json`
 (там же история числа подписчиков). Запустить вне расписания: Actions → «Статистика Instagram» → Run workflow.
 
+## Threads
+
+Посты в Threads идут из `threads.json` так же, как рилсы: workflow «Публикация в Threads» запускается каждые полчаса
+и выкладывает пост точно в назначенное время (опоздание до 3 часов - выйдет сразу, больше - `missed` и письмо на почту).
+Вышедшие отмечаются в `state/threads.json`, перед публикацией скрипт сверяет последние посты профиля, чтобы не было дублей.
+
+Запись в очереди:
+
+```json
+{
+  "id": "2026-10-13-1200",
+  "at": "2026-10-13T12:00:00+03:00",
+  "text": "Текст поста, до 500 знаков",
+  "topic": "Английский язык",
+  "poll": ["Вариант 1", "Вариант 2"],
+  "images": ["slang-01.png"],
+  "replies": ["Продолжение треда", "Ещё продолжение"]
+}
+```
+
+Обязательны `id`, `at`, `text`. По желанию: `topic` - тема поста (одна), `poll` - опрос на 2-4 варианта
+(только без картинок), `images` - 1 картинка или карусель до 20 (файлы с расширением кладутся в Release, как ролики),
+`replies` - продолжение: каждый следующий пост выходит ответом на предыдущий. Проверить очередь:
+Actions → «Публикация в Threads» → Run workflow → `check`.
+
+### Подключение (один раз)
+
+1. Профиль Threads для we_yapp: войти в приложение Threads через Instagram we_yapp, профиль публичный.
+2. developers.facebook.com → приложение → **Add use case** → «Access the Threads API» (если Meta не даёт добавить
+   его к «Yapp Reels», создать отдельное приложение с этим use case). Права: `threads_basic`,
+   `threads_content_publish`, `threads_manage_replies` (для продолжений треда), `threads_manage_insights` (на будущее).
+3. App roles → Roles → **Threads Testers** → добавить we_yapp. Принять приглашение в Threads:
+   Настройки → Аккаунт → Разрешения для сайтов → Приглашения.
+4. Выпустить токен для we_yapp (генератор токенов в настройках Threads use case или Graph API Explorer с `threads.net`).
+   Если токен короткий (живёт час), обменять его на 60-дневный локально:
+   `TH_TOKEN=короткий TH_APP_SECRET=секрет_приложения node scripts/threads.mjs exchange` → токен в `.new-token`.
+5. Положить токен в секрет: `gh secret set TH_TOKEN -R Saveliy1312/yapp-reels` и вставить токен.
+   Продлевает его тот же workflow, что и токен Instagram (нужен `GH_PAT`).
+6. Actions → «Публикация в Threads» → Run workflow → `check`: должен показать `аккаунт we_yapp`.
+
+Пока секрета `TH_TOKEN` нет, workflow ничего не делает и не падает.
+
 ## Секреты (Settings → Secrets and variables → Actions)
 
 - `IG_TOKEN` - токен Instagram API with Instagram Login для we_yapp с правами `instagram_business_basic`,
@@ -46,6 +89,7 @@ Workflow «Статистика Instagram» каждый день в 05:50 МС�
 - `GH_PAT` (по желанию) - fine-grained токен GitHub только на этот репозиторий с правом **Secrets: Read and write**.
   С ним workflow «Продление токена Instagram» каждый понедельник сам продлевает `IG_TOKEN`. Без него токен нужно
   перевыпускать вручную раз в 60 дней.
+- `TH_TOKEN` - токен Threads API для we_yapp (см. раздел [Threads](#threads)). Живёт 60 дней, продлевается вместе с `IG_TOKEN`.
 
 ## Чего API не умеет
 

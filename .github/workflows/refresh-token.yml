@@ -1,6 +1,6 @@
-name: Продление токена Instagram
+name: Продление токенов Instagram и Threads
 
-# Токен Instagram живёт 60 дней. Раз в неделю продлеваем его и обновляем секрет IG_TOKEN.
+# Токены Instagram и Threads живут 60 дней. Раз в неделю продлеваем их и обновляем секреты IG_TOKEN и TH_TOKEN.
 # Для записи секрета нужен секрет GH_PAT: fine-grained токен GitHub на этот репозиторий с правом Secrets: Read and write.
 on:
   schedule:
@@ -26,3 +26,17 @@ jobs:
         run: |
           if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета GH_PAT - токен продлён, но секрет не обновлён. Через 60 дней от выдачи токена нужен новый."; exit 0; fi
           gh secret set IG_TOKEN -R "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/t"
+      - name: Продлить токен Threads
+        env:
+          TH_TOKEN: ${{ secrets.TH_TOKEN }}
+          TOKEN_OUT: ${{ runner.temp }}/th
+        run: |
+          if [ -z "$TH_TOKEN" ]; then echo "Threads не подключён - пропускаю"; exit 0; fi
+          node scripts/threads.mjs refresh
+      - name: Обновить секрет Threads
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          [ -f "$RUNNER_TEMP/th" ] || exit 0
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета GH_PAT - токен Threads продлён, но секрет не обновлён."; exit 0; fi
+          gh secret set TH_TOKEN -R "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/th"
