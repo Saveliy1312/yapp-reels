@@ -1,6 +1,8 @@
 name: Публикация в Threads
 
 on:
+  push:
+    branches: [threads-autopublish]   # ВРЕМЕННО: проверка токена до мержа
   schedule:
     - cron: '5,35 * * * *'   # каждые полчаса; скрипт сам ждёт точного времени слота
   workflow_dispatch:
@@ -30,7 +32,7 @@ jobs:
       - name: Выложить
         run: |
           if [ -z "$TH_TOKEN" ]; then echo "::warning::Нет секрета TH_TOKEN - Threads пока не подключён"; exit 0; fi
-          node scripts/threads.mjs ${{ inputs.mode || 'publish' }}
+          node scripts/threads.mjs ${{ inputs.mode || (github.event_name == 'push' && 'check') || 'publish' }}
         env:
           TH_TOKEN: ${{ secrets.TH_TOKEN }}
           MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
