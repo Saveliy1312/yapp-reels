@@ -2,10 +2,11 @@ name: Ролики и обложки на GitHub Pages
 
 # Meta забирает видео и обложку по публичной ссылке. Здесь на Pages выкладываются файлы из Releases
 # для ещё не вышедших рилсов (и вышедших за последние 2 дня), чтобы сайт не разрастался.
+# Также Threads забирает картинки постов из threads.json (поле images - имена файлов с расширением).
 on:
   push:
     branches: [main]
-    paths: [queue.json, web/**]
+    paths: [queue.json, threads.json, web/**]
   workflow_dispatch:
 
 permissions:
@@ -34,12 +35,19 @@ jobs:
           node -e '
             const q = require("./queue.json"), s = require("./state/published.json");
             const keep = q.filter(i => !s[i.id] || Date.now() - new Date(i.at) < 2*864e5).map(i => i.media);
-            require("fs").writeFileSync("keep.txt", [...new Set(keep)].join("\n") + "\n");'
+            require("fs").writeFileSync("keep.txt", [...new Set(keep)].join("\n") + "\n");
+            const t = require("./threads.json"), ts = require("./state/threads.json");
+            const img = t.filter(i => !ts[i.id] || Date.now() - new Date(i.at) < 2*864e5).flatMap(i => i.images || []);
+            require("fs").writeFileSync("keep-threads.txt", [...new Set(img)].join("\n") + "\n");'
           for tag in $(gh release list --limit 20 --json tagName -q '.[].tagName'); do
             while read -r m; do
               [ -z "$m" ] && continue
               gh release download "$tag" -D site/media -p "$m.mp4" -p "$m.png" --skip-existing 2>/dev/null || true
             done < keep.txt
+            while read -r f; do
+              [ -z "$f" ] && continue
+              gh release download "$tag" -D site/media -p "$f" --skip-existing 2>/dev/null || true
+            done < keep-threads.txt
           done
           # лёгкие миниатюры обложек для списка (оригиналы PNG по 1-2 МБ остаются для Instagram и плеера)
           command -v convert >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick; }

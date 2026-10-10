@@ -1,0 +1,45 @@
+name: Публикация в Threads
+
+on:
+  schedule:
+    - cron: '5,35 * * * *'   # каждые полчаса; скрипт сам ждёт точного времени слота
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'publish - выложить то, что пора; check - проверить токен, тексты и картинки'
+        default: check
+        type: choice
+        options: [check, publish]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Выложить
+        run: |
+          if [ -z "$TH_TOKEN" ]; then echo "::warning::Нет секрета TH_TOKEN - Threads пока не подключён"; exit 0; fi
+          node scripts/threads.mjs ${{ inputs.mode || 'publish' }}
+        env:
+          TH_TOKEN: ${{ secrets.TH_TOKEN }}
+          MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
+      - name: Сохранить отметки о вышедших
+        if: always()
+        run: |
+          git config user.name "yapp-reels-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/threads.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Вышли посты в Threads: $(date -u +%F' '%H:%M) UTC"
+          git pull --rebase && git push
