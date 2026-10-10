@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Очередь рилсов Yapp</title>
+<title>Очередь публикаций Yapp</title>
 <style>
   :root {
     --bg: #f6f6f4; --card: #fff; --text: #1c1c1e; --muted: #6b6b70; --line: #e4e4e0;
@@ -61,21 +61,31 @@
   .missed { background: var(--bad-bg); color: var(--bad); }
   a { color: var(--accent); }
   .err { color: var(--bad); }
+  .filter { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 3px; margin-right: 8px; }
+  .filter button { border: 0; background: none; color: var(--muted); font: inherit; font-size: 14px; padding: 4px 12px; border-radius: 99px; cursor: pointer; }
+  .filter button[aria-pressed="true"] { background: var(--accent); color: var(--card); }
+  .th-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--text); color: var(--bg); display: grid; place-items: center; font-weight: 700; font-size: 20px; }
+  .kind { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 99px; background: var(--line); color: var(--muted); margin-right: 6px; }
+  details ul { margin: 6px 0 0; padding-left: 18px; font-size: 13px; }
   @media (max-width: 560px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
     .row { grid-template-columns: 40px 36px 1fr; gap: 10px; }
     .row .cover { width: 36px; height: 64px; }
     .row .badge-cell { grid-column: 3; }
+    .row .th-icon { width: 36px; height: 36px; }
   }
 </style>
 </head>
 <body>
 <main>
-  <h1>Очередь рилсов Yapp</h1>
-  <p class="sub">@we_yapp · время московское · рилсы, которые выкладывает автопубликация (то, что запланировано вручную в Meta Business Suite, здесь не видно)</p>
+  <h1>Очередь публикаций Yapp</h1>
+  <p class="sub">@we_yapp · время московское · рилсы в Instagram и посты в Threads, которые выкладывает автопубликация (то, что запланировано вручную в Meta Business Suite, здесь не видно)</p>
   <div class="stats" id="stats"></div>
   <div class="next" id="next"></div>
   <div class="toolbar">
+    <div class="filter" id="filter" role="group" aria-label="Что показывать">
+      <button data-kind="all">Все</button><button data-kind="reel">Рилсы</button><button data-kind="thread">Threads</button>
+    </div>
     <label><input type="checkbox" id="showPast"> показать прошедшие дни</label>
   </div>
   <div id="days"><p class="sub">Загружаю очередь…</p></div>
@@ -96,40 +106,60 @@ const fmtTime = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, hour: '2
 const fmtDay = (d) => new Intl.DateTimeFormat('ru-RU', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'long' }).format(d);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const cleanTitle = (t) => t.replace(/^\d+ · /, '');
-const plural = (n) => n % 10 === 1 && n % 100 !== 11 ? 'рилс' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'рилса' : 'рилсов';
+const WORDS = { all: ['публикация', 'публикации', 'публикаций'], reel: ['рилс', 'рилса', 'рилсов'], thread: ['пост', 'поста', 'постов'] };
+const plural = (n, w = WORDS[kind]) => n % 10 === 1 && n % 100 !== 11 ? w[0] : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? w[1] : w[2];
 
 let showPast = false;
+let kind = 'all';
 try { showPast = localStorage.getItem('showPast') === '1'; } catch {}
+try { kind = localStorage.getItem('kind') || 'all'; } catch {}
+const filterBox = document.getElementById('filter');
+const markFilter = () => filterBox.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.kind === kind)));
+markFilter();
+filterBox.addEventListener('click', (e) => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  kind = b.dataset.kind;
+  try { localStorage.setItem('kind', kind); } catch {}
+  markFilter();
+  if (data) render();
+});
 const box = document.getElementById('showPast');
 box.checked = showPast;
 
 async function load() {
   const bust = '?t=' + Date.now();
-  const [queue, state] = await Promise.all([
-    fetch(RAW + 'queue.json' + bust).then((r) => r.json()),
-    fetch(RAW + 'state/published.json' + bust).then((r) => r.json()),
+  const json = (f) => fetch(RAW + f + bust).then((r) => r.json());
+  const opt = (f, empty) => json(f).catch(() => empty);
+  const [queue, state, threads, thState] = await Promise.all([
+    json('queue.json'), json('state/published.json'), opt('threads.json', []), opt('state/threads.json', {}),
   ]);
-  render(queue, state);
+  data = [
+    ...queue.map((q) => ({ ...q, kind: 'reel', s: state[q.id] })),
+    ...threads.map((t) => ({ ...t, kind: 'thread', s: thState[t.id], title: t.title || t.text.split('\n')[0] })),
+  ].map((i) => ({ ...i, date: new Date(i.at) })).sort((a, b) => a.date - b.date);
+  render();
 }
+let data = null;
 
-function status(item, st) {
-  const s = st[item.id];
+function status(item) {
+  const s = item.s;
   if (s?.status === 'published') return `<span class="badge published">${s.permalink ? `<a href="${esc(s.permalink)}" target="_blank" rel="noopener">вышел ↗</a>` : 'вышел'}</span>`;
   if (s?.status === 'missed') return '<span class="badge missed">пропущен</span>';
   return '<span class="badge waiting">запланирован</span>';
 }
 
-let current = { items: [], st: {} };
+let current = [];
 const dlg = document.getElementById('player');
 const media = document.getElementById('dlg-media');
 
 function openPlayer(id) {
-  const i = current.items.find((x) => x.id === id);
+  const i = current.find((x) => x.id === id);
   if (!i) return;
-  const s = current.st[i.id];
+  const s = i.s;
   const enc = encodeURIComponent(i.media);
   document.getElementById('dlg-title').textContent = cleanTitle(i.title);
-  document.getElementById('dlg-when').innerHTML = `${esc(fmtDay(i.date))}, ${fmtTime(i.date)} · ${status(i, current.st)}`;
+  document.getElementById('dlg-when').innerHTML = `${esc(fmtDay(i.date))}, ${fmtTime(i.date)} · ${status(i)}`;
   document.getElementById('dlg-caption').textContent = i.caption;
   media.innerHTML = `<video controls playsinline autoplay preload="metadata" poster="media/${enc}.png" src="media/${enc}.mp4"></video>`;
   media.querySelector('video').addEventListener('error', () => {
@@ -146,21 +176,21 @@ document.getElementById('days').addEventListener('click', (e) => {
   if (b) openPlayer(b.dataset.id);
 });
 
-function render(queue, st) {
+function render() {
   const now = new Date();
-  const items = queue.map((q) => ({ ...q, date: new Date(q.at) })).sort((a, b) => a.date - b.date);
-  current = { items, st };
-  const pub = items.filter((i) => st[i.id]?.status === 'published').length;
-  const missed = items.filter((i) => st[i.id]?.status === 'missed').length;
+  const items = data.filter((i) => kind === 'all' || i.kind === kind);
+  current = items;
+  const pub = items.filter((i) => i.s?.status === 'published').length;
+  const missed = items.filter((i) => i.s?.status === 'missed').length;
   const wait = items.length - pub - missed;
   const lastDay = items.length ? fmtDay(items.at(-1).date) : '-';
   document.getElementById('stats').innerHTML = [
     [wait, 'ждут выхода'], [pub, 'вышло'], [missed, 'пропущено'], [lastDay, 'последний день очереди'],
   ].map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${l}</span></div>`).join('');
 
-  const next = items.find((i) => !st[i.id]);
+  const next = items.find((i) => !i.s);
   document.getElementById('next').innerHTML = next
-    ? `Следующий: <b>${esc(fmtDay(next.date))}, ${fmtTime(next.date)}</b> - ${esc(cleanTitle(next.title))}`
+    ? `Следующий${kind === 'all' ? ` (${next.kind === 'reel' ? 'рилс' : 'Threads'})` : ''}: <b>${esc(fmtDay(next.date))}, ${fmtTime(next.date)}</b> - ${esc(cleanTitle(next.title))}`
     : 'Очередь пуста - пора добавить новую партию.';
 
   const today = dayKey(now);
@@ -174,19 +204,38 @@ function render(queue, st) {
     <section class="day${k === today ? ' today' : ''}">
       <div class="day-head"><h2>${esc(fmtDay(list[0].date))}</h2><span class="count">${list.length} ${plural(list.length)}</span></div>
       ${list.map((i) => {
+        if (i.kind === 'thread') return threadRow(i);
         const isSeries = /^Серия/.test(i.title);
         return `<div class="row">
           <span class="time">${fmtTime(i.date)}</span>
           <button class="cover" data-id="${esc(i.id)}" aria-label="Смотреть: ${esc(cleanTitle(i.title))}"><img loading="lazy" src="media/thumbs/${encodeURIComponent(i.media)}.jpg" alt="" onerror="this.onerror=null;this.src='media/${encodeURIComponent(i.media)}.png'"></button>
           <div>
-            <div class="title">${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(cleanTitle(i.title))}</div>
+            <div class="title">${kind === 'all' ? '<span class="kind">рилс</span>' : ''}${isSeries ? `<span class="series">${i.media.includes('max') ? 'Макс' : 'Аня'}</span>` : ''}${esc(cleanTitle(i.title))}</div>
             <details><summary>подпись</summary><p>${esc(i.caption)}</p></details>
           </div>
-          <span class="badge-cell">${status(i, st)}</span>
+          <span class="badge-cell">${status(i)}</span>
         </div>`;
       }).join('')}
     </section>`).join('');
   document.getElementById('days').innerHTML = html || '<p class="sub">Впереди ничего не запланировано.</p>';
+}
+
+// Пост Threads: значок вместо обложки, под спойлером - текст, опрос и продолжения треда.
+function threadRow(i) {
+  const extra = [
+    i.poll && `<p>Опрос:</p><ul>${i.poll.map((o) => `<li>${esc(o)}</li>`).join('')}</ul>`,
+    i.replies && `<p>Продолжение треда:</p><ul>${i.replies.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>`,
+  ].filter(Boolean).join('');
+  const label = i.poll ? 'опрос' : i.replies ? `тред из ${i.replies.length + 1}` : 'пост';
+  return `<div class="row">
+    <span class="time">${fmtTime(i.date)}</span>
+    <span class="th-icon" aria-hidden="true">@</span>
+    <div>
+      <div class="title"><span class="kind">Threads · ${label}</span>${esc(i.title)}</div>
+      <details><summary>текст</summary><p>${esc(i.text)}</p>${extra}</details>
+    </div>
+    <span class="badge-cell">${status(i)}</span>
+  </div>`;
 }
 
 box.addEventListener('change', () => {
