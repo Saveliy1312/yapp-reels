@@ -1,11 +1,15 @@
 {
-  "updated_at": "2026-10-10T22:03:55.178Z",
+  "updated_at": "2026-10-11T03:00:37.442Z",
   "username": "we_yapp",
   "followers_count": 0,
   "median_views": null,
   "followers": [
     {
       "date": "2026-10-10",
+      "count": 0
+    },
+    {
+      "date": "2026-10-11",
       "count": 0
     }
   ],
