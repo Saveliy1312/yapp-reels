@@ -24,6 +24,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # свежий main, а не коммит на момент запуска: иначе отметки предыдущего запуска не видны
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -11,6 +11,7 @@ const MEDIA_BASE = (process.env.MEDIA_BASE || '').replace(/\/$/, '');
 const LEAD_MIN = 30;       // за сколько минут до слота начинаем готовить пост (cron каждые 30 мин)
 const LATE_MIN = 180;      // до скольких минут опоздания ещё публикуем
 const MAX_TEXT = 500;      // лимит Threads на текст поста
+const MAX_OPTION = 25;     // лимит Threads на вариант опроса - в байтах UTF-8: русская буква = 2 байта
 const QUEUE = 'threads.json';
 const STATE = 'state/threads.json';
 
@@ -30,7 +31,12 @@ async function th(method, path, params = {}) {
     ? await fetch(url + '?' + body)
     : await fetch(url, { method, body });
   const json = await res.json().catch(() => ({}));
-  if (!res.ok || json.error) throw new Error(`${method} ${path}: ${JSON.stringify(json.error || json)}`);
+  if (!res.ok || json.error) {
+    const err = new Error(`${method} ${path}: ${JSON.stringify(json.error || json)}`);
+    // Неверный параметр (код 100, не временная ошибка): повтор через полчаса не поможет.
+    err.permanent = json.error?.code === 100 && json.error?.is_transient === false;
+    throw err;
+  }
   return json;
 }
 
@@ -47,6 +53,10 @@ function problems(item) {
   if (images.length > 20) out.push('картинок больше 20');
   if (item.poll && (item.poll.length < 2 || item.poll.length > 4)) out.push('в опросе 2-4 варианта');
   if (item.poll && images.length) out.push('опрос бывает только у поста без картинок');
+  for (const o of item.poll || []) {
+    const n = Buffer.byteLength(o || '');
+    if (!n || n > MAX_OPTION) out.push(`вариант «${o}»: ${n} байт, можно 1-${MAX_OPTION} (русская буква - 2 байта)`);
+  }
   return out;
 }
 
@@ -149,7 +159,11 @@ async function publish() {
     } catch (e) {
       failed = true;
       log('ОШИБКА', e.message);
-      summary(`- ❌ ${item.at} ${title(item)}: ${e.message}`);
+      if (e.permanent && !state[item.id]) {
+        state[item.id] = { status: 'missed', note: e.message, at: new Date().toISOString() };
+        saveState(state);
+      }
+      summary(`- ❌ ${item.at} ${title(item)}: ${e.message}${e.permanent ? ' (пропущен, выложи вручную)' : ''}`);
     }
   }
   if (failed) process.exitCode = 1;
