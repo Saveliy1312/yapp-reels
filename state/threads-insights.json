@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T03:00:37.442Z",
+  "updated_at": "2026-10-12T03:02:43.570Z",
   "username": "we_yapp",
   "followers_count": 0,
   "median_views": null,
@@ -11,7 +11,57 @@
     {
       "date": "2026-10-11",
       "count": 0
+    },
+    {
+      "date": "2026-10-12",
+      "count": 0
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "17973150582152285",
+      "queue_id": "2026-10-11-2110",
+      "type": "post",
+      "at": "2026-10-11T18:10:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeXOoJElGHz",
+      "title": "Цель на осень",
+      "views": 82,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": null
+    },
+    {
+      "id": "18034301312666857",
+      "queue_id": "2026-10-11-1850",
+      "type": "post",
+      "at": "2026-10-11T15:50:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeXA_AtG7JM",
+      "title": "Sunday scaries",
+      "views": 29,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": null
+    },
+    {
+      "id": "18055583852584949",
+      "queue_id": "2026-10-11-1020",
+      "type": "post",
+      "at": "2026-10-11T07:20:01+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeWD73TEYe8",
+      "title": "Знакомство",
+      "views": 84,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": null
+    }
+  ]
 }
