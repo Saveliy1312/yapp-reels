@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-13T03:02:50.048Z",
+  "updated_at": "2026-10-14T03:13:07.920Z",
   "username": "we_yapp",
-  "followers_count": 0,
-  "median_views": null,
+  "followers_count": 1,
+  "median_views": 84,
   "followers": [
     {
       "date": "2026-10-10",
@@ -19,9 +19,73 @@
     {
       "date": "2026-10-13",
       "count": 0
+    },
+    {
+      "date": "2026-10-14",
+      "count": 1
     }
   ],
   "posts": [
+    {
+      "id": "17885912256652820",
+      "queue_id": "2026-10-13-2120",
+      "type": "post",
+      "at": "2026-10-13T18:20:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DecYoVyHcNG",
+      "title": "No cap",
+      "views": 178,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 2.1
+    },
+    {
+      "id": "18088150856271876",
+      "queue_id": "2026-10-13-1845",
+      "type": "post",
+      "at": "2026-10-13T15:45:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DecHwg0mwcf",
+      "title": "Непопулярное мнение про грамматику",
+      "views": 10,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.1
+    },
+    {
+      "id": "18019007708736725",
+      "queue_id": "2026-10-13-1330",
+      "type": "post",
+      "at": "2026-10-13T10:30:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeblZzim6RG",
+      "title": "Как переспросить",
+      "views": 77,
+      "likes": 2,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.9
+    },
+    {
+      "id": "18098518187389699",
+      "queue_id": "2026-10-13-0915",
+      "type": "poll",
+      "at": "2026-10-13T06:15:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DebGWYslfWV",
+      "title": "Would you rather: свободно или правильно",
+      "views": 8,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.1
+    },
     {
       "id": "18011831027966395",
       "queue_id": "2026-10-12-2110",
@@ -29,13 +93,13 @@
       "at": "2026-10-12T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZzx0qGMPf",
       "title": "Опрос: кого стесняешься",
-      "views": 111,
-      "likes": 0,
-      "replies": 1,
+      "views": 136,
+      "likes": 1,
+      "replies": 3,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 1.6
     },
     {
       "id": "18090603890294849",
@@ -44,13 +108,13 @@
       "at": "2026-10-12T15:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZi8N0FQmk",
       "title": "Пять дословных переводов (тред)",
-      "views": 279,
+      "views": 280,
       "likes": 1,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 3.3
     },
     {
       "id": "18101750537324887",
@@ -65,7 +129,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 1.3
     },
     {
       "id": "18037314911844720",
@@ -74,13 +138,13 @@
       "at": "2026-10-12T06:30:03+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeYl8UJm0Od",
       "title": "Touch base",
-      "views": 131,
+      "views": 132,
       "likes": 3,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 1.6
     },
     {
       "id": "17973150582152285",
@@ -95,7 +159,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 1
     },
     {
       "id": "18034301312666857",
@@ -104,13 +168,13 @@
       "at": "2026-10-11T15:50:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeXA_AtG7JM",
       "title": "Sunday scaries",
-      "views": 30,
+      "views": 31,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 0.4
     },
     {
       "id": "18055583852584949",
@@ -125,7 +189,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": null
+      "outlier": 1
     }
   ]
 }
