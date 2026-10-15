@@ -2,7 +2,7 @@ name: Публикация рилсов
 
 on:
   schedule:
-    - cron: '5,35 * * * *'   # каждые полчаса; скрипт сам ждёт точного времени слота
+    - cron: '5,35 * * * *'   # будильник; дальше запуск дежурит сам (scripts/watch.sh) и передаёт дежурство следующему
   workflow_dispatch:
     inputs:
       mode:
@@ -13,25 +13,40 @@ on:
 
 permissions:
   contents: write
+  actions: write   # передать дежурство следующему запуску
 
 concurrency:
-  group: publish
+  group: publish-${{ inputs.mode || 'publish' }}   # check не ждёт, пока дежурит publish
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Выложить
-        run: node scripts/publish.mjs ${{ inputs.mode || 'publish' }}
+      - name: Проверить
+        if: inputs.mode && inputs.mode != 'publish'
+        run: node scripts/publish.mjs ${{ inputs.mode }}
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
+      - name: Дежурить и выкладывать по графику
+        if: ${{ !inputs.mode || inputs.mode == 'publish' }}
+        run: scripts/watch.sh publish.mjs state "Вышли рилсы"
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
+      - name: Передать дежурство следующему запуску
+        if: ${{ !cancelled() && (!inputs.mode || inputs.mode == 'publish') }}
+        run: |
+          node -e 'process.exit(require("./queue.json").some((q) => new Date(q.at) > Date.now()) ? 0 : 1)' \
+            && gh workflow run publish.yml -f mode=publish || echo "Очередь пуста - дальше разбудит cron"
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Сохранить отметки о вышедших
         if: always()
         run: |

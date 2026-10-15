@@ -96,8 +96,18 @@ async function prepare(user, item) {
   return ready(c.id);
 }
 
+// Threads иногда отвечает «Media Not Found» (код 24) на только что готовый контейнер: через полминуты проходит.
 async function publishContainer(user, creationId) {
-  const { id } = await th('POST', `/${user}/threads_publish`, { creation_id: creationId });
+  let id;
+  for (let i = 0; ; i++) {
+    try {
+      ({ id } = await th('POST', `/${user}/threads_publish`, { creation_id: creationId }));
+      break;
+    } catch (e) {
+      if (i >= 4 || !e.message.includes('"code":24')) throw e;
+      await sleep(30_000);
+    }
+  }
   const { permalink } = await th('GET', '/' + id, { fields: 'permalink' }).catch(() => ({}));
   return { id, permalink };
 }

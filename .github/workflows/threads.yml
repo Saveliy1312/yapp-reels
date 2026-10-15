@@ -2,7 +2,7 @@ name: Публикация в Threads
 
 on:
   schedule:
-    - cron: '5,35 * * * *'   # каждые полчаса; скрипт сам ждёт точного времени слота
+    - cron: '5,35 * * * *'   # будильник; дальше запуск дежурит сам (scripts/watch.sh) и передаёт дежурство следующему
   workflow_dispatch:
     inputs:
       mode:
@@ -13,15 +13,16 @@ on:
 
 permissions:
   contents: write
+  actions: write   # передать дежурство следующему запуску
 
 concurrency:
-  group: threads
+  group: threads-${{ inputs.mode || 'publish' }}   # check не ждёт, пока дежурит publish
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,13 +30,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Выложить
-        run: |
-          if [ -z "$TH_TOKEN" ]; then echo "::warning::Нет секрета TH_TOKEN - Threads пока не подключён"; exit 0; fi
-          node scripts/threads.mjs ${{ inputs.mode || 'publish' }}
+      - name: Проверить
+        if: inputs.mode && inputs.mode != 'publish'
+        run: node scripts/threads.mjs ${{ inputs.mode }}
         env:
           TH_TOKEN: ${{ secrets.TH_TOKEN }}
           MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
+      - name: Дежурить и выкладывать по графику
+        if: ${{ !inputs.mode || inputs.mode == 'publish' }}
+        run: scripts/watch.sh threads.mjs state/threads.json "Вышли посты в Threads"
+        env:
+          TH_TOKEN: ${{ secrets.TH_TOKEN }}
+          MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media
+      - name: Передать дежурство следующему запуску
+        if: ${{ !cancelled() && (!inputs.mode || inputs.mode == 'publish') }}
+        run: |
+          node -e 'process.exit(require("./threads.json").some((q) => new Date(q.at) > Date.now()) ? 0 : 1)' \
+            && gh workflow run threads.yml -f mode=publish || echo "Очередь пуста - дальше разбудит cron"
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Сохранить отметки о вышедших
         if: always()
         run: |
