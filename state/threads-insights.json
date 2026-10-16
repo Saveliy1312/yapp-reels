@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-15T07:44:59.753Z",
+  "updated_at": "2026-10-16T07:33:05.437Z",
   "username": "we_yapp",
   "followers_count": 1,
-  "median_views": 98.5,
+  "median_views": 86,
   "followers": [
     {
       "date": "2026-10-10",
@@ -27,9 +27,88 @@
     {
       "date": "2026-10-15",
       "count": 1
+    },
+    {
+      "date": "2026-10-16",
+      "count": 1
     }
   ],
   "posts": [
+    {
+      "id": "18487012846129073",
+      "queue_id": "2026-10-16-0930",
+      "type": "post",
+      "at": "2026-10-16T06:30:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Dei13aSEWye",
+      "title": "Lowkey и highkey",
+      "views": 50,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.6
+    },
+    {
+      "id": "18135869689709803",
+      "queue_id": "2026-10-15-2105",
+      "type": "thread",
+      "at": "2026-10-15T18:05:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DehgnrbGiGK",
+      "title": "Фразы для рабочего созвона (тред)",
+      "views": 240,
+      "likes": 0,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 2.8
+    },
+    {
+      "id": "18112179407271171",
+      "queue_id": "2026-10-15-1840",
+      "type": "post",
+      "at": "2026-10-15T15:40:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DehQFHWG26Y",
+      "title": "Неловкий момент с английским",
+      "views": 46,
+      "likes": 1,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.5
+    },
+    {
+      "id": "18131253838813441",
+      "queue_id": "2026-10-15-1345",
+      "type": "post",
+      "at": "2026-10-15T10:45:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeguNpgkTD-",
+      "title": "Слово вылетело - опиши",
+      "views": 98,
+      "likes": 1,
+      "replies": 3,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 1.1
+    },
+    {
+      "id": "18086708642316480",
+      "queue_id": "2026-10-15-0920",
+      "type": "post",
+      "at": "2026-10-15T08:37:54+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Degi9WXnD_Q",
+      "title": "Фразы-паузы",
+      "views": 38,
+      "likes": 1,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.4
+    },
     {
       "id": "18133180603741082",
       "queue_id": "2026-10-14-2115",
@@ -37,13 +116,13 @@
       "at": "2026-10-14T20:36:25+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DefQZChElbg",
       "title": "Опрос: сколько говоришь вслух",
-      "views": 27,
+      "views": 34,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18008112908989650",
@@ -52,13 +131,13 @@
       "at": "2026-10-14T17:02:06+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dee33a0Gkqa",
       "title": "Что значат уровни (тред)",
-      "views": 709,
-      "likes": 4,
+      "views": 842,
+      "likes": 5,
       "replies": 5,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 7.2
+      "outlier": 9.8
     },
     {
       "id": "18096055730371413",
@@ -67,13 +146,13 @@
       "at": "2026-10-14T11:41:44+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeeTNBsFuqo",
       "title": "Любимое слово по звучанию",
-      "views": 323,
+      "views": 328,
       "likes": 2,
       "replies": 9,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.8
     },
     {
       "id": "17885912256652820",
@@ -82,13 +161,13 @@
       "at": "2026-10-13T18:20:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DecYoVyHcNG",
       "title": "No cap",
-      "views": 184,
+      "views": 187,
       "likes": 2,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.9
+      "outlier": 2.2
     },
     {
       "id": "18088150856271876",
@@ -97,13 +176,13 @@
       "at": "2026-10-13T15:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DecHwg0mwcf",
       "title": "Непопулярное мнение про грамматику",
-      "views": 12,
+      "views": 14,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "18019007708736725",
@@ -112,13 +191,13 @@
       "at": "2026-10-13T10:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeblZzim6RG",
       "title": "Как переспросить",
-      "views": 80,
+      "views": 82,
       "likes": 2,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18098518187389699",
@@ -127,7 +206,7 @@
       "at": "2026-10-13T06:15:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DebGWYslfWV",
       "title": "Would you rather: свободно или правильно",
-      "views": 9,
+      "views": 10,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -142,13 +221,13 @@
       "at": "2026-10-12T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZzx0qGMPf",
       "title": "Опрос: кого стесняешься",
-      "views": 160,
+      "views": 184,
       "likes": 1,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 2.1
     },
     {
       "id": "18090603890294849",
@@ -157,13 +236,13 @@
       "at": "2026-10-12T15:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZi8N0FQmk",
       "title": "Пять дословных переводов (тред)",
-      "views": 280,
+      "views": 281,
       "likes": 1,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.8
+      "outlier": 3.3
     },
     {
       "id": "18101750537324887",
@@ -172,13 +251,13 @@
       "at": "2026-10-12T10:40:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZApmDHHge",
       "title": "Out of the loop",
-      "views": 111,
+      "views": 112,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.3
     },
     {
       "id": "18037314911844720",
@@ -187,13 +266,13 @@
       "at": "2026-10-12T06:30:03+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeYl8UJm0Od",
       "title": "Touch base",
-      "views": 132,
+      "views": 133,
       "likes": 3,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.5
     },
     {
       "id": "17973150582152285",
@@ -202,13 +281,13 @@
       "at": "2026-10-11T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeXOoJElGHz",
       "title": "Цель на осень",
-      "views": 84,
+      "views": 85,
       "likes": 2,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 1
     },
     {
       "id": "18034301312666857",
@@ -217,13 +296,13 @@
       "at": "2026-10-11T15:50:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeXA_AtG7JM",
       "title": "Sunday scaries",
-      "views": 31,
+      "views": 32,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18055583852584949",
@@ -238,7 +317,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 1
     }
   ]
 }
