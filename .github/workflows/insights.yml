@@ -1,6 +1,7 @@
 name: Статистика Instagram
 
-# Раз в день сохраняет метрики последних 50 постов we_yapp в state/insights.json и state/insights.md.
+# Раз в день сохраняет метрики постов we_yapp в state/insights.json и state/insights.md: у 150 последних
+# цифры обновляются, более старые остаются с последними известными цифрами и датой среза.
 # Нужно право instagram_business_manage_insights у секрета IG_TOKEN.
 on:
   schedule:
