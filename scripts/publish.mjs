@@ -2,6 +2,7 @@
 // Запуск: node scripts/publish.mjs [publish|check|probe|refresh|insights]
 // Переменные: IG_TOKEN (токен we_yapp), MEDIA_BASE (адрес GitHub Pages с роликами и обложками).
 import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+import { mergePosts, withOutliers, settled } from './insights-lib.mjs';
 
 const API = `https://graph.instagram.com/${process.env.IG_API_VERSION || 'v23.0'}`;
 const TOKEN = process.env.IG_TOKEN;
@@ -140,9 +141,11 @@ async function refresh() {
   log(`токен продлён на ${Math.round(json.expires_in / 86400)} дн.`);
 }
 
-// Статистика последних постов профиля: state/insights.json (для скриптов и Claude) и state/insights.md (для людей).
-// Нужно право instagram_business_manage_insights у IG_TOKEN.
+// Статистика постов профиля: state/insights.json (для скриптов и Claude) и state/insights.md (для людей).
+// Цифры обновляются у FRESH_LIMIT последних постов, более старые остаются с последними известными цифрами
+// и датой среза as_of. Нужно право instagram_business_manage_insights у IG_TOKEN.
 const INSIGHTS = 'state/insights';
+const FRESH_LIMIT = 150;   // при трёх постах в день - примерно 50 дней
 const REEL_METRICS = ['views', 'reach', 'saved', 'shares', 'likes', 'comments', 'total_interactions',
   'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time'];
 const FEED_METRICS = ['views', 'reach', 'saved', 'shares', 'likes', 'comments', 'total_interactions',
@@ -167,29 +170,35 @@ async function mediaInsights(m) {
   }
 }
 
-const median = (xs) => {
-  const s = xs.filter((x) => x != null).sort((a, b) => a - b);
-  return s.length ? (s[(s.length - 1) >> 1] + s[s.length >> 1]) / 2 : null;
-};
 const msk = (t) => new Date(t).toLocaleString('ru-RU', {
   timeZone: 'Europe/Moscow', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
 });
 
 async function insights() {
   const me = await ig('GET', '/me', { fields: 'username,followers_count,media_count' });
-  const { data: media = [] } = await ig('GET', '/me/media', {
-    fields: 'id,caption,media_type,media_product_type,timestamp,permalink', limit: '50',
-  });
+  const media = [];
+  for (let after = null; media.length < FRESH_LIMIT;) {
+    const { data = [], paging } = await ig('GET', '/me/media', {
+      fields: 'id,caption,media_type,media_product_type,timestamp,permalink', limit: '50', ...(after && { after }),
+    });
+    media.push(...data);
+    after = paging?.next && paging.cursors?.after;
+    if (!after || !data.length) break;
+  }
+  media.splice(FRESH_LIMIT);
   const queue = JSON.parse(readFileSync('queue.json', 'utf8'));
   const titles = Object.fromEntries(queue.map((q) => [q.id, q.title]));
   const byMedia = Object.fromEntries(Object.entries(loadState())
     .filter(([, s]) => s.media_id).map(([id, s]) => [s.media_id, id]));
 
-  const posts = [];
+  let saved = {};
+  try { saved = JSON.parse(readFileSync(INSIGHTS + '.json', 'utf8')); } catch {}
+
+  const fresh = [];
   for (const m of media) {
     const queueId = byMedia[m.id] || null;
     const i = await mediaInsights(m);
-    posts.push({
+    fresh.push({
       id: m.id,
       queue_id: queueId,
       type: m.media_product_type === 'REELS' ? 'reel' : m.media_type === 'CAROUSEL_ALBUM' ? 'carousel' : 'post',
@@ -202,19 +211,13 @@ async function insights() {
   }
 
   // Свежие посты ещё набирают просмотры, поэтому медиана - по постам старше 48 часов, отдельно для каждого типа.
-  const settled = (p) => Date.now() - new Date(p.at) > 48 * 3600_000;
-  const base = {};
-  for (const type of ['reel', 'carousel', 'post']) {
-    base[type] = median(posts.filter((p) => p.type === type && settled(p)).map((p) => p.views));
-  }
-  for (const p of posts) p.outlier = p.views != null && base[p.type] ? Math.round((p.views / base[p.type]) * 10) / 10 : null;
-
-  let followers = [];
-  try { followers = JSON.parse(readFileSync(INSIGHTS + '.json', 'utf8')).followers || []; } catch {}
-  const today = new Date().toISOString().slice(0, 10);
-  followers = [...followers.filter((f) => f.date !== today), { date: today, count: me.followers_count }];
-
   const updated = new Date().toISOString();
+  const posts = mergePosts(fresh, saved.posts, updated, saved.updated_at);
+  const base = withOutliers(posts);
+
+  const today = updated.slice(0, 10);
+  const followers = [...(saved.followers || []).filter((f) => f.date !== today), { date: today, count: me.followers_count }];
+
   writeFileSync(INSIGHTS + '.json', JSON.stringify({
     updated_at: updated, username: me.username, followers_count: me.followers_count,
     median_views: base, followers, posts,
@@ -225,15 +228,17 @@ async function insights() {
     `# Статистика @${me.username}`, '',
     `Обновлено ${msk(updated)} МСК. Подписчиков: ${me.followers_count}. ` +
       `Медиана просмотров (посты старше 48 ч): рилсы ${n(base.reel)}, карусели ${n(base.carousel)}.`,
-    '«x медианы» - во сколько раз пост обошёл обычный пост своего типа. * - вышел меньше 48 ч назад, ещё набирает.', '',
-    '| Вышел (МСК) | Тип | Просмотры | x медианы | Охват | Сохр. | Репосты | Ср. досмотр, с | Пост |',
-    '| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |',
+    '«x медианы» - во сколько раз пост обошёл обычный пост своего типа (медиана - по 50 последним постам). ' +
+      '* - вышел меньше 48 ч назад, ещё набирает. Срез - когда цифры обновлялись в последний раз.', '',
+    '| Вышел (МСК) | Тип | Просмотры | x медианы | Охват | Сохр. | Репосты | Ср. досмотр, с | Срез | Пост |',
+    '| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |',
     ...posts.map((p) => `| ${msk(p.at)}${settled(p) ? '' : '*'} | ${p.type} | ${n(p.views)} | ${n(p.outlier)} | ${n(p.reach)} | ` +
-      `${n(p.saved)} | ${n(p.shares)} | ${n(p.avg_watch_s)} | [${p.title.replace(/[|[\]]/g, ' ').slice(0, 60)}](${p.permalink}) |`),
+      `${n(p.saved)} | ${n(p.shares)} | ${n(p.avg_watch_s)} | ${p.as_of ? msk(p.as_of).slice(0, 5) : '-'} | ` +
+      `[${p.title.replace(/[|[\]]/g, ' ').slice(0, 60)}](${p.permalink}) |`),
   ].join('\n') + '\n';
   writeFileSync(INSIGHTS + '.md', md);
-  log(`статистика: ${posts.length} постов, подписчиков ${me.followers_count}`);
-  summary(`Статистика: ${posts.length} постов, подписчиков ${me.followers_count}, медиана рилсов ${n(base.reel)}`);
+  log(`статистика: ${posts.length} постов (обновлено ${fresh.length}), подписчиков ${me.followers_count}`);
+  summary(`Статистика: ${posts.length} постов (обновлено ${fresh.length}), подписчиков ${me.followers_count}, медиана рилсов ${n(base.reel)}`);
 }
 
 const cmd = process.argv[2] || 'publish';
