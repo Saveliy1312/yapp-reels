@@ -1,14 +1,14 @@
 # Статистика Threads @we_yapp
 
-Обновлено 19.10, 10:53 МСК. Подписчиков: 3. Медиана просмотров (посты старше 48 ч): 103.
+Обновлено 19.10, 11:07 МСК. Подписчиков: 3. Медиана просмотров (посты старше 48 ч): 103.
 «x медианы» - во сколько раз пост обошёл обычный пост. * - вышел меньше 48 ч назад, ещё набирает.
 Тип: post - текст, poll - опрос, thread - тред с продолжением (цифры только по первому посту).
 
 | Вышел (МСК) | Тип | Просмотры | x медианы | Лайки | Ответы | Репосты | Цитаты | Поделились | Пост |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 19.10, 09:35* | post | 59 | 0.6 | 0 | 0 | 0 | 0 | 0 | [A case of the Mondays](https://www.threads.com/@we_yapp/post/Deqk4DBkZWe) |
+| 19.10, 09:35* | post | 74 | 0.7 | 1 | 0 | 0 | 0 | 0 | [A case of the Mondays](https://www.threads.com/@we_yapp/post/Deqk4DBkZWe) |
 | 18.10, 21:10* | post | 296 | 2.9 | 0 | 0 | 0 | 0 | 0 | [Итог недели](https://www.threads.com/@we_yapp/post/DepPaQMnTOn) |
-| 18.10, 18:50* | thread | 391 | 3.8 | 2 | 5 | 0 | 0 | 1 | [Small talk без учебника (тред)](https://www.threads.com/@we_yapp/post/Deo_ZB2GxUR) |
+| 18.10, 18:50* | thread | 391 | 3.8 | 3 | 5 | 0 | 0 | 1 | [Small talk без учебника (тред)](https://www.threads.com/@we_yapp/post/Deo_ZB2GxUR) |
 | 18.10, 13:35* | post | 114 | 1.1 | 1 | 2 | 0 | 0 | 0 | [Задание на воскресенье](https://www.threads.com/@we_yapp/post/DeobhBylu3y) |
 | 18.10, 10:20* | poll | 8 | 0.1 | 1 | 0 | 0 | 0 | 0 | [Опрос: что сложнее всего](https://www.threads.com/@we_yapp/post/DeoFG3dltmW) |
 | 17.10, 21:30* | post | 13 | 0.1 | 1 | 0 | 0 | 0 | 0 | [Как устроен Yapp](https://www.threads.com/@we_yapp/post/Dems9VMFF47) |
