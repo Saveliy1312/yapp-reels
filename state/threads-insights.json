@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-19T08:07:05.723Z",
+  "updated_at": "2026-10-20T07:56:54.762Z",
   "username": "we_yapp",
-  "followers_count": 3,
-  "median_views": 103,
+  "followers_count": 4,
+  "median_views": 86,
   "followers": [
     {
       "date": "2026-10-10",
@@ -43,9 +43,88 @@
     {
       "date": "2026-10-19",
       "count": 3
+    },
+    {
+      "date": "2026-10-20",
+      "count": 4
     }
   ],
   "posts": [
+    {
+      "id": "18233327023324747",
+      "queue_id": "2026-10-20-0940",
+      "type": "poll",
+      "at": "2026-10-20T06:40:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DetKF_9lfRP",
+      "title": "Опрос: как практикуешь разговор",
+      "views": 7,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.1
+    },
+    {
+      "id": "18164744434504066",
+      "queue_id": "2026-10-19-2110",
+      "type": "thread",
+      "at": "2026-10-19T18:10:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Der0RTumhFP",
+      "title": "Наши фразы по-английски (тред)",
+      "views": 28,
+      "likes": 1,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
+      "id": "18107442752098440",
+      "queue_id": "2026-10-19-1820",
+      "type": "post",
+      "at": "2026-10-19T15:20:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Derg1TdmhGo",
+      "title": "Ответ: spill the tea",
+      "views": 30,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
+      "id": "18021116573730230",
+      "queue_id": "2026-10-19-1550",
+      "type": "post",
+      "at": "2026-10-19T12:50:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DerPyzKm0yZ",
+      "title": "Слово, которое произносил неправильно",
+      "views": 143,
+      "likes": 0,
+      "replies": 4,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 1.7
+    },
+    {
+      "id": "17917151259465995",
+      "queue_id": "2026-10-19-1245",
+      "type": "poll",
+      "at": "2026-10-19T09:45:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Deq6eNrEZ_a",
+      "title": "Опрос: spill the tea",
+      "views": 54,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.6
+    },
     {
       "id": "18141239983720453",
       "queue_id": "2026-10-19-0935",
@@ -53,13 +132,13 @@
       "at": "2026-10-19T06:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Deqk4DBkZWe",
       "title": "A case of the Mondays",
-      "views": 74,
+      "views": 88,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 1
     },
     {
       "id": "18218307232358262",
@@ -68,13 +147,13 @@
       "at": "2026-10-18T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DepPaQMnTOn",
       "title": "Итог недели",
-      "views": 296,
+      "views": 308,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.9
+      "outlier": 3.6
     },
     {
       "id": "18060656804538993",
@@ -83,13 +162,13 @@
       "at": "2026-10-18T15:50:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Deo_ZB2GxUR",
       "title": "Small talk без учебника (тред)",
-      "views": 391,
+      "views": 417,
       "likes": 3,
       "replies": 5,
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 3.8
+      "outlier": 4.8
     },
     {
       "id": "17999654462823156",
@@ -98,13 +177,13 @@
       "at": "2026-10-18T10:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeobhBylu3y",
       "title": "Задание на воскресенье",
-      "views": 114,
+      "views": 116,
       "likes": 1,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.3
     },
     {
       "id": "17960785452246890",
@@ -134,7 +213,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "18103352975645694",
@@ -149,7 +228,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "17907040923587582",
@@ -164,7 +243,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18121669226470953",
@@ -179,7 +258,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.9
     },
     {
       "id": "18108166577265553",
@@ -194,7 +273,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.4
+      "outlier": 4.1
     },
     {
       "id": "18123287122864928",
@@ -209,7 +288,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 2
     },
     {
       "id": "18116195087611006",
@@ -218,13 +297,13 @@
       "at": "2026-10-16T10:15:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DejPrOZm4Ca",
       "title": "Опрос: It's not that deep",
-      "views": 209,
+      "views": 213,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2
+      "outlier": 2.5
     },
     {
       "id": "18487012846129073",
@@ -239,7 +318,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18135869689709803",
@@ -254,7 +333,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.8
+      "outlier": 3.3
     },
     {
       "id": "18112179407271171",
@@ -269,7 +348,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.6
     },
     {
       "id": "18131253838813441",
@@ -284,7 +363,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.2
     },
     {
       "id": "18086708642316480",
@@ -299,7 +378,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18133180603741082",
@@ -308,13 +387,13 @@
       "at": "2026-10-14T20:36:25+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DefQZChElbg",
       "title": "Опрос: сколько говоришь вслух",
-      "views": 40,
+      "views": 43,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18008112908989650",
@@ -323,13 +402,13 @@
       "at": "2026-10-14T17:02:06+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dee33a0Gkqa",
       "title": "Что значат уровни (тред)",
-      "views": 842,
+      "views": 843,
       "likes": 5,
       "replies": 5,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 8.2
+      "outlier": 9.8
     },
     {
       "id": "18096055730371413",
@@ -344,7 +423,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.2
+      "outlier": 3.8
     },
     {
       "id": "17885912256652820",
@@ -359,7 +438,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 2.2
     },
     {
       "id": "18088150856271876",
@@ -374,7 +453,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "18019007708736725",
@@ -389,7 +468,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18098518187389699",
@@ -413,13 +492,13 @@
       "at": "2026-10-12T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeZzx0qGMPf",
       "title": "Опрос: кого стесняешься",
-      "views": 189,
+      "views": 190,
       "likes": 1,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 2.2
     },
     {
       "id": "18090603890294849",
@@ -434,7 +513,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.7
+      "outlier": 3.3
     },
     {
       "id": "18101750537324887",
@@ -449,7 +528,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.3
     },
     {
       "id": "18037314911844720",
@@ -464,7 +543,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.6
     },
     {
       "id": "17973150582152285",
@@ -479,7 +558,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18034301312666857",
@@ -494,7 +573,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18055583852584949",
@@ -509,7 +588,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     }
   ]
 }
