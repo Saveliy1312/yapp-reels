@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-20T07:56:54.762Z",
+  "updated_at": "2026-10-21T08:01:30.787Z",
   "username": "we_yapp",
   "followers_count": 4,
-  "median_views": 86,
+  "median_views": 90,
   "followers": [
     {
       "date": "2026-10-10",
@@ -47,9 +47,88 @@
     {
       "date": "2026-10-20",
       "count": 4
+    },
+    {
+      "date": "2026-10-21",
+      "count": 4
     }
   ],
   "posts": [
+    {
+      "id": "17898760137396334",
+      "queue_id": "2026-10-21-0935",
+      "type": "post",
+      "at": "2026-10-21T06:35:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DevuR_ZHEz6",
+      "title": "I'm on it",
+      "views": 53,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.6
+    },
+    {
+      "id": "18118524205953507",
+      "queue_id": "2026-10-20-2105",
+      "type": "thread",
+      "at": "2026-10-20T18:05:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeuYmODHcjx",
+      "title": "Вежливость по-английски (тред)",
+      "views": 53,
+      "likes": 0,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.6
+    },
+    {
+      "id": "18413253910090644",
+      "queue_id": "2026-10-20-1840",
+      "type": "post",
+      "at": "2026-10-20T15:40:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DeuH6L9miPY",
+      "title": "Ответ: I'm dead",
+      "views": 18,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.2
+    },
+    {
+      "id": "17908803624325917",
+      "queue_id": "2026-10-20-1610",
+      "type": "post",
+      "at": "2026-10-20T13:10:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Det2u2NFIfI",
+      "title": "Фраза из сериала в голове",
+      "views": 254,
+      "likes": 1,
+      "replies": 3,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 2.8
+    },
+    {
+      "id": "18126742021871181",
+      "queue_id": "2026-10-20-1250",
+      "type": "poll",
+      "at": "2026-10-20T09:50:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Detf1lMG1sA",
+      "title": "Опрос: I'm dead",
+      "views": 70,
+      "likes": 0,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.8
+    },
     {
       "id": "18233327023324747",
       "queue_id": "2026-10-20-0940",
@@ -57,7 +136,7 @@
       "at": "2026-10-20T06:40:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DetKF_9lfRP",
       "title": "Опрос: как практикуешь разговор",
-      "views": 7,
+      "views": 11,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -72,7 +151,7 @@
       "at": "2026-10-19T18:10:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Der0RTumhFP",
       "title": "Наши фразы по-английски (тред)",
-      "views": 28,
+      "views": 30,
       "likes": 1,
       "replies": 6,
       "reposts": 0,
@@ -87,7 +166,7 @@
       "at": "2026-10-19T15:20:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Derg1TdmhGo",
       "title": "Ответ: spill the tea",
-      "views": 30,
+      "views": 31,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -102,13 +181,13 @@
       "at": "2026-10-19T12:50:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DerPyzKm0yZ",
       "title": "Слово, которое произносил неправильно",
-      "views": 143,
+      "views": 144,
       "likes": 0,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.6
     },
     {
       "id": "17917151259465995",
@@ -117,13 +196,13 @@
       "at": "2026-10-19T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Deq6eNrEZ_a",
       "title": "Опрос: spill the tea",
-      "views": 54,
+      "views": 104,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 1.2
     },
     {
       "id": "18141239983720453",
@@ -132,7 +211,7 @@
       "at": "2026-10-19T06:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Deqk4DBkZWe",
       "title": "A case of the Mondays",
-      "views": 88,
+      "views": 90,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -153,7 +232,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.6
+      "outlier": 3.4
     },
     {
       "id": "18060656804538993",
@@ -168,7 +247,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 4.8
+      "outlier": 4.6
     },
     {
       "id": "17999654462823156",
@@ -177,7 +256,7 @@
       "at": "2026-10-18T10:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeobhBylu3y",
       "title": "Задание на воскресенье",
-      "views": 116,
+      "views": 119,
       "likes": 1,
       "replies": 2,
       "reposts": 0,
@@ -207,7 +286,7 @@
       "at": "2026-10-17T18:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dems9VMFF47",
       "title": "Как устроен Yapp",
-      "views": 13,
+      "views": 15,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -228,7 +307,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.6
     },
     {
       "id": "17907040923587582",
@@ -243,7 +322,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.6
     },
     {
       "id": "18121669226470953",
@@ -258,7 +337,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18108166577265553",
@@ -273,7 +352,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.1
+      "outlier": 3.9
     },
     {
       "id": "18123287122864928",
@@ -288,7 +367,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2
+      "outlier": 1.9
     },
     {
       "id": "18116195087611006",
@@ -297,13 +376,13 @@
       "at": "2026-10-16T10:15:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DejPrOZm4Ca",
       "title": "Опрос: It's not that deep",
-      "views": 213,
+      "views": 219,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.5
+      "outlier": 2.4
     },
     {
       "id": "18487012846129073",
@@ -333,7 +412,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.2
     },
     {
       "id": "18112179407271171",
@@ -363,7 +442,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.2
+      "outlier": 1.1
     },
     {
       "id": "18086708642316480",
@@ -378,7 +457,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.4
     },
     {
       "id": "18133180603741082",
@@ -402,13 +481,13 @@
       "at": "2026-10-14T17:02:06+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dee33a0Gkqa",
       "title": "Что значат уровни (тред)",
-      "views": 843,
+      "views": 845,
       "likes": 5,
       "replies": 5,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 9.8
+      "outlier": 9.4
     },
     {
       "id": "18096055730371413",
@@ -423,7 +502,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.8
+      "outlier": 3.7
     },
     {
       "id": "17885912256652820",
@@ -438,7 +517,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.1
     },
     {
       "id": "18088150856271876",
@@ -468,7 +547,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 0.9
     },
     {
       "id": "18098518187389699",
@@ -498,7 +577,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.1
     },
     {
       "id": "18090603890294849",
@@ -513,7 +592,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.1
     },
     {
       "id": "18101750537324887",
@@ -528,7 +607,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.2
     },
     {
       "id": "18037314911844720",
@@ -543,7 +622,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.5
     },
     {
       "id": "17973150582152285",
@@ -558,7 +637,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 0.9
     },
     {
       "id": "18034301312666857",
