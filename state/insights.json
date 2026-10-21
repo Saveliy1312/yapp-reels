@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-20T07:56:55.864Z",
+  "updated_at": "2026-10-21T07:37:58.825Z",
   "username": "we_yapp",
-  "followers_count": 61,
+  "followers_count": 62,
   "median_views": {
-    "reel": 146,
+    "reel": 150,
     "carousel": null,
     "post": null
   },
@@ -59,9 +59,53 @@
     {
       "date": "2026-10-20",
       "count": 61
+    },
+    {
+      "date": "2026-10-21",
+      "count": 62
     }
   ],
   "posts": [
+    {
+      "id": "18218923135358718",
+      "queue_id": "2026-10-20-2030",
+      "type": "reel",
+      "at": "2026-10-20T17:30:01+0000",
+      "permalink": "https://www.instagram.com/reel/DeuUq4AFbKZ/",
+      "title": "Пять уровней усталости",
+      "views": 184,
+      "reach": 157,
+      "saved": 0,
+      "shares": 0,
+      "likes": 5,
+      "comments": 0,
+      "total_interactions": 6,
+      "ig_reels_avg_watch_time": 8458,
+      "ig_reels_video_view_total_time": 1327944,
+      "avg_watch_s": 8.5,
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.2
+    },
+    {
+      "id": "18643170190032154",
+      "queue_id": "2026-10-20-1400",
+      "type": "reel",
+      "at": "2026-10-20T11:00:01+0000",
+      "permalink": "https://www.instagram.com/reel/Detn8P6lJLX/",
+      "title": "Комплименты по-английски",
+      "views": 137,
+      "reach": 116,
+      "saved": 2,
+      "shares": 3,
+      "likes": 6,
+      "comments": 1,
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 6228,
+      "ig_reels_video_view_total_time": 741250,
+      "avg_watch_s": 6.2,
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
+    },
     {
       "id": "18197797759390364",
       "queue_id": "2026-10-20-0830",
@@ -69,18 +113,18 @@
       "at": "2026-10-20T05:30:00+0000",
       "permalink": "https://www.instagram.com/reel/DetCGJOlHYC/",
       "title": "Уже выхожу - честный перевод",
-      "views": 137,
-      "reach": 119,
+      "views": 160,
+      "reach": 132,
       "saved": 0,
       "shares": 0,
       "likes": 4,
       "comments": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 7737,
-      "ig_reels_video_view_total_time": 936277,
-      "avg_watch_s": 7.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 0.9
+      "ig_reels_avg_watch_time": 7624,
+      "ig_reels_video_view_total_time": 1067446,
+      "avg_watch_s": 7.6,
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18448753480127649",
@@ -89,17 +133,17 @@
       "at": "2026-10-19T17:30:01+0000",
       "permalink": "https://www.instagram.com/reel/Derv6RCDk2C/",
       "title": "Сегодня я никуда не пойду",
-      "views": 141,
-      "reach": 125,
+      "views": 146,
+      "reach": 127,
       "saved": 1,
       "shares": 0,
       "likes": 10,
       "comments": 0,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 6238,
-      "ig_reels_video_view_total_time": 792339,
-      "avg_watch_s": 6.2,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 6370,
+      "ig_reels_video_view_total_time": 828129,
+      "avg_watch_s": 6.4,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -109,17 +153,17 @@
       "at": "2026-10-19T11:00:01+0000",
       "permalink": "https://www.instagram.com/reel/DerDOwHkrnX/",
       "title": "Осень по-английски",
-      "views": 187,
-      "reach": 156,
+      "views": 192,
+      "reach": 160,
       "saved": 2,
       "shares": 9,
       "likes": 5,
       "comments": 0,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 8300,
-      "ig_reels_video_view_total_time": 1352954,
-      "avg_watch_s": 8.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 8139,
+      "ig_reels_video_view_total_time": 1367454,
+      "avg_watch_s": 8.1,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.3
     },
     {
@@ -129,17 +173,17 @@
       "at": "2026-10-19T05:30:00+0000",
       "permalink": "https://www.instagram.com/reel/DeqdTegiCie/",
       "title": "Понедельник по-английски",
-      "views": 158,
-      "reach": 131,
+      "views": 161,
+      "reach": 133,
       "saved": 0,
       "shares": 3,
       "likes": 5,
       "comments": 0,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 8504,
-      "ig_reels_video_view_total_time": 1199092,
-      "avg_watch_s": 8.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 8397,
+      "ig_reels_video_view_total_time": 1200847,
+      "avg_watch_s": 8.4,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -149,18 +193,18 @@
       "at": "2026-10-18T16:00:01+0000",
       "permalink": "https://www.instagram.com/reel/DepAvYnj8kr/",
       "title": "Серия 5 · Демо (финал)",
-      "views": 155,
-      "reach": 122,
+      "views": 156,
+      "reach": 123,
       "saved": 0,
       "shares": 0,
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 5415,
-      "ig_reels_video_view_total_time": 725731,
+      "ig_reels_avg_watch_time": 5386,
+      "ig_reels_video_view_total_time": 727140,
       "avg_watch_s": 5.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1
     },
     {
       "id": "18430411963146115",
@@ -179,7 +223,7 @@
       "ig_reels_avg_watch_time": 3835,
       "ig_reels_video_view_total_time": 533176,
       "avg_watch_s": 3.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -199,7 +243,7 @@
       "ig_reels_avg_watch_time": 6853,
       "ig_reels_video_view_total_time": 973153,
       "avg_watch_s": 6.9,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -209,17 +253,17 @@
       "at": "2026-10-17T18:30:01+0000",
       "permalink": "https://www.instagram.com/reel/Dems8kGkS20/",
       "title": "05 · Переписка: sus",
-      "views": 143,
-      "reach": 134,
+      "views": 145,
+      "reach": 135,
       "saved": 1,
       "shares": 1,
       "likes": 3,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 4824,
-      "ig_reels_video_view_total_time": 636886,
-      "avg_watch_s": 4.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 4870,
+      "ig_reels_video_view_total_time": 647816,
+      "avg_watch_s": 4.9,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -229,18 +273,18 @@
       "at": "2026-10-17T16:00:01+0000",
       "permalink": "https://www.instagram.com/reel/Demb1pAjHpr/",
       "title": "Серия 4 · Шутка",
-      "views": 141,
+      "views": 142,
       "reach": 122,
       "saved": 0,
       "shares": 0,
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6376,
-      "ig_reels_video_view_total_time": 777873,
-      "avg_watch_s": 6.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "ig_reels_avg_watch_time": 6346,
+      "ig_reels_video_view_total_time": 780674,
+      "avg_watch_s": 6.3,
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "18129208121493499",
@@ -256,10 +300,10 @@
       "likes": 2,
       "comments": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 6744,
-      "ig_reels_video_view_total_time": 836360,
+      "ig_reels_avg_watch_time": 6713,
+      "ig_reels_video_view_total_time": 839193,
       "avg_watch_s": 6.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -276,11 +320,11 @@
       "likes": 6,
       "comments": 0,
       "total_interactions": 7,
-      "ig_reels_avg_watch_time": 5640,
-      "ig_reels_video_view_total_time": 767136,
+      "ig_reels_avg_watch_time": 5622,
+      "ig_reels_video_view_total_time": 770287,
       "avg_watch_s": 5.6,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "18135789190653471",
@@ -299,7 +343,7 @@
       "ig_reels_avg_watch_time": 3032,
       "ig_reels_video_view_total_time": 351734,
       "avg_watch_s": 3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -319,7 +363,7 @@
       "ig_reels_avg_watch_time": 6851,
       "ig_reels_video_view_total_time": 767385,
       "avg_watch_s": 6.9,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -336,11 +380,11 @@
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 5420,
-      "ig_reels_video_view_total_time": 607126,
+      "ig_reels_avg_watch_time": 5379,
+      "ig_reels_video_view_total_time": 607893,
       "avg_watch_s": 5.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 0.9
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.8
     },
     {
       "id": "18078285776416168",
@@ -359,7 +403,7 @@
       "ig_reels_avg_watch_time": 5759,
       "ig_reels_video_view_total_time": 771737,
       "avg_watch_s": 5.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -379,7 +423,7 @@
       "ig_reels_avg_watch_time": 9480,
       "ig_reels_video_view_total_time": 1232432,
       "avg_watch_s": 9.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -399,7 +443,7 @@
       "ig_reels_avg_watch_time": 4710,
       "ig_reels_video_view_total_time": 574738,
       "avg_watch_s": 4.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -419,7 +463,7 @@
       "ig_reels_avg_watch_time": 5148,
       "ig_reels_video_view_total_time": 823810,
       "avg_watch_s": 5.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -439,7 +483,7 @@
       "ig_reels_avg_watch_time": 5813,
       "ig_reels_video_view_total_time": 749939,
       "avg_watch_s": 5.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -459,7 +503,7 @@
       "ig_reels_avg_watch_time": 6381,
       "ig_reels_video_view_total_time": 759357,
       "avg_watch_s": 6.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -479,8 +523,8 @@
       "ig_reels_avg_watch_time": 4349,
       "ig_reels_video_view_total_time": 517599,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 0.9
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.8
     },
     {
       "id": "18129131452879262",
@@ -489,17 +533,17 @@
       "at": "2026-10-13T14:30:01+0000",
       "permalink": "https://www.instagram.com/reel/DecAttBleEf/",
       "title": "09 · Сценка: understood the assignment",
-      "views": 79,
-      "reach": 68,
+      "views": 80,
+      "reach": 69,
       "saved": 0,
       "shares": 0,
       "likes": 5,
       "comments": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 4022,
-      "ig_reels_video_view_total_time": 285619,
+      "ig_reels_avg_watch_time": 3992,
+      "ig_reels_video_view_total_time": 287475,
       "avg_watch_s": 4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.5
     },
     {
@@ -519,7 +563,7 @@
       "ig_reels_avg_watch_time": 7053,
       "ig_reels_video_view_total_time": 938129,
       "avg_watch_s": 7.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -539,8 +583,8 @@
       "ig_reels_avg_watch_time": 4087,
       "ig_reels_video_view_total_time": 498682,
       "avg_watch_s": 4.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "18114500693113735",
@@ -559,7 +603,7 @@
       "ig_reels_avg_watch_time": 5245,
       "ig_reels_video_view_total_time": 681917,
       "avg_watch_s": 5.2,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -579,7 +623,7 @@
       "ig_reels_avg_watch_time": 4311,
       "ig_reels_video_view_total_time": 573384,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -599,7 +643,7 @@
       "ig_reels_avg_watch_time": 3549,
       "ig_reels_video_view_total_time": 429540,
       "avg_watch_s": 3.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -619,7 +663,7 @@
       "ig_reels_avg_watch_time": 4046,
       "ig_reels_video_view_total_time": 485534,
       "avg_watch_s": 4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.9
     },
     {
@@ -639,8 +683,8 @@
       "ig_reels_avg_watch_time": 5377,
       "ig_reels_video_view_total_time": 634580,
       "avg_watch_s": 5.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "17983838607121216",
@@ -659,7 +703,7 @@
       "ig_reels_avg_watch_time": 4535,
       "ig_reels_video_view_total_time": 666650,
       "avg_watch_s": 4.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -679,8 +723,8 @@
       "ig_reels_avg_watch_time": 4771,
       "ig_reels_video_view_total_time": 787220,
       "avg_watch_s": 4.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.3
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.2
     },
     {
       "id": "18114576110104395",
@@ -699,8 +743,8 @@
       "ig_reels_avg_watch_time": 3233,
       "ig_reels_video_view_total_time": 423554,
       "avg_watch_s": 3.2,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1
     },
     {
       "id": "18192937291402706",
@@ -719,7 +763,7 @@
       "ig_reels_avg_watch_time": 5806,
       "ig_reels_video_view_total_time": 104509,
       "avg_watch_s": 5.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 0.2
     },
     {
@@ -739,7 +783,7 @@
       "ig_reels_avg_watch_time": 5225,
       "ig_reels_video_view_total_time": 679289,
       "avg_watch_s": 5.2,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -759,7 +803,7 @@
       "ig_reels_avg_watch_time": 4285,
       "ig_reels_video_view_total_time": 535735,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -779,7 +823,7 @@
       "ig_reels_avg_watch_time": 5082,
       "ig_reels_video_view_total_time": 787798,
       "avg_watch_s": 5.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -799,8 +843,8 @@
       "ig_reels_avg_watch_time": 4122,
       "ig_reels_video_view_total_time": 564759,
       "avg_watch_s": 4.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "17902413027657777",
@@ -819,7 +863,7 @@
       "ig_reels_avg_watch_time": 5571,
       "ig_reels_video_view_total_time": 830161,
       "avg_watch_s": 5.6,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -839,7 +883,7 @@
       "ig_reels_avg_watch_time": 6881,
       "ig_reels_video_view_total_time": 984078,
       "avg_watch_s": 6.9,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -859,8 +903,8 @@
       "ig_reels_avg_watch_time": 6081,
       "ig_reels_video_view_total_time": 900105,
       "avg_watch_s": 6.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "17948656239340508",
@@ -879,8 +923,8 @@
       "ig_reels_avg_watch_time": 8337,
       "ig_reels_video_view_total_time": 1325697,
       "avg_watch_s": 8.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.3
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.2
     },
     {
       "id": "17989838525868099",
@@ -899,8 +943,8 @@
       "ig_reels_avg_watch_time": 4140,
       "ig_reels_video_view_total_time": 608675,
       "avg_watch_s": 4.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18144192430579986",
@@ -919,7 +963,7 @@
       "ig_reels_avg_watch_time": 4762,
       "ig_reels_video_view_total_time": 580991,
       "avg_watch_s": 4.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -939,8 +983,8 @@
       "ig_reels_avg_watch_time": 9008,
       "ig_reels_video_view_total_time": 4729551,
       "avg_watch_s": 9,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 4.6
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 4.5
     },
     {
       "id": "17871811794649329",
@@ -959,7 +1003,7 @@
       "ig_reels_avg_watch_time": 6260,
       "ig_reels_video_view_total_time": 1026735,
       "avg_watch_s": 6.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -979,7 +1023,7 @@
       "ig_reels_avg_watch_time": 3627,
       "ig_reels_video_view_total_time": 504191,
       "avg_watch_s": 3.6,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -989,17 +1033,17 @@
       "at": "2026-10-09T16:00:01+0000",
       "permalink": "https://www.instagram.com/reel/DeR3oqRlJUi/",
       "title": "Серия 1 · Провал",
-      "views": 368,
+      "views": 373,
       "reach": 285,
       "saved": 0,
       "shares": 3,
       "likes": 11,
       "comments": 2,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 6004,
-      "ig_reels_video_view_total_time": 1903526,
+      "ig_reels_avg_watch_time": 5981,
+      "ig_reels_video_view_total_time": 1908185,
       "avg_watch_s": 6,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 2.5
     },
     {
@@ -1019,8 +1063,8 @@
       "ig_reels_avg_watch_time": 4279,
       "ig_reels_video_view_total_time": 552045,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "17916179199264084",
@@ -1039,7 +1083,7 @@
       "ig_reels_avg_watch_time": 3386,
       "ig_reels_video_view_total_time": 443643,
       "avg_watch_s": 3.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -1059,7 +1103,7 @@
       "ig_reels_avg_watch_time": 4347,
       "ig_reels_video_view_total_time": 547796,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -1079,7 +1123,7 @@
       "ig_reels_avg_watch_time": 6876,
       "ig_reels_video_view_total_time": 893908,
       "avg_watch_s": 6.9,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -1089,17 +1133,17 @@
       "at": "2026-10-09T07:18:49+0000",
       "permalink": "https://www.instagram.com/reel/DeQ9BrUCWaW/",
       "title": "Начинаем с нуля и будем честно показывать каждый шаг: что получилось и где ошиблись. Хотим, чтобы английский был про живой разговор, а не про упражнения в тетради.",
-      "views": 266,
+      "views": 270,
       "reach": 172,
       "saved": 0,
       "shares": 13,
       "likes": 27,
       "comments": 0,
       "total_interactions": 41,
-      "ig_reels_avg_watch_time": 9993,
-      "ig_reels_video_view_total_time": 1928818,
-      "avg_watch_s": 10,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 10056,
+      "ig_reels_video_view_total_time": 1950884,
+      "avg_watch_s": 10.1,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.8
     },
     {
@@ -1119,7 +1163,7 @@
       "ig_reels_avg_watch_time": 5347,
       "ig_reels_video_view_total_time": 823474,
       "avg_watch_s": 5.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -1139,7 +1183,7 @@
       "ig_reels_avg_watch_time": 4435,
       "ig_reels_video_view_total_time": 652005,
       "avg_watch_s": 4.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -1159,8 +1203,8 @@
       "ig_reels_avg_watch_time": 4059,
       "ig_reels_video_view_total_time": 608888,
       "avg_watch_s": 4.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18006178028990063",
@@ -1179,8 +1223,8 @@
       "ig_reels_avg_watch_time": 3321,
       "ig_reels_video_view_total_time": 455058,
       "avg_watch_s": 3.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1
     },
     {
       "id": "18110743238171905",
@@ -1199,8 +1243,8 @@
       "ig_reels_avg_watch_time": 5983,
       "ig_reels_video_view_total_time": 927449,
       "avg_watch_s": 6,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.3
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.2
     },
     {
       "id": "17960140482231018",
@@ -1219,7 +1263,7 @@
       "ig_reels_avg_watch_time": 5720,
       "ig_reels_video_view_total_time": 795174,
       "avg_watch_s": 5.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -1239,8 +1283,8 @@
       "ig_reels_avg_watch_time": 11028,
       "ig_reels_video_view_total_time": 8337481,
       "avg_watch_s": 11,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 7.3
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 7.1
     },
     {
       "id": "17906353752578897",
@@ -1259,7 +1303,7 @@
       "ig_reels_avg_watch_time": 3687,
       "ig_reels_video_view_total_time": 512497,
       "avg_watch_s": 3.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -1269,17 +1313,17 @@
       "at": "2026-10-07T15:02:00+0000",
       "permalink": "https://www.instagram.com/reel/DeMog5eiG54/",
       "title": "Угадай слово по картинке: 3 слова, 3 секунды на каждое ⏱",
-      "views": 325,
+      "views": 327,
       "reach": 290,
       "saved": 0,
       "shares": 1,
       "likes": 11,
       "comments": 0,
       "total_interactions": 12,
-      "ig_reels_avg_watch_time": 5680,
-      "ig_reels_video_view_total_time": 1772374,
-      "avg_watch_s": 5.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "ig_reels_avg_watch_time": 5647,
+      "ig_reels_video_view_total_time": 1773379,
+      "avg_watch_s": 5.6,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 2.2
     },
     {
@@ -1299,8 +1343,8 @@
       "ig_reels_avg_watch_time": 4421,
       "ig_reels_video_view_total_time": 698574,
       "avg_watch_s": 4.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18126766825868151",
@@ -1309,7 +1353,7 @@
       "at": "2026-10-07T08:02:08+0000",
       "permalink": "https://www.instagram.com/reel/DeL4e87ERAi/",
       "title": "Не знаешь, что сказать незнакомцу?",
-      "views": 151,
+      "views": 169,
       "reach": 129,
       "saved": 0,
       "shares": 0,
@@ -1319,8 +1363,8 @@
       "ig_reels_avg_watch_time": 3524,
       "ig_reels_video_view_total_time": 486322,
       "avg_watch_s": 3.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18622510885003219",
@@ -1329,18 +1373,18 @@
       "at": "2026-10-07T07:03:26+0000",
       "permalink": "https://www.instagram.com/reel/DeLxY2RirlW/",
       "title": "2 часа английского в неделю, и почти ни минуты, чтобы на нём говорить 🤐",
-      "views": 1406,
+      "views": 1407,
       "reach": 1011,
       "saved": 2,
       "shares": 22,
       "likes": 54,
       "comments": 10,
       "total_interactions": 96,
-      "ig_reels_avg_watch_time": 11572,
-      "ig_reels_video_view_total_time": 13968043,
+      "ig_reels_avg_watch_time": 11563,
+      "ig_reels_video_view_total_time": 13968526,
       "avg_watch_s": 11.6,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 9.6
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 9.4
     },
     {
       "id": "18136745029636958",
@@ -1359,7 +1403,7 @@
       "ig_reels_avg_watch_time": 4795,
       "ig_reels_video_view_total_time": 705007,
       "avg_watch_s": 4.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -1379,7 +1423,7 @@
       "ig_reels_avg_watch_time": 4707,
       "ig_reels_video_view_total_time": 804915,
       "avg_watch_s": 4.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.2
     },
     {
@@ -1389,17 +1433,17 @@
       "at": "2026-10-06T15:01:18+0000",
       "permalink": "https://www.instagram.com/reel/DeKDpyelq-b/",
       "title": "Одно и то же - разными словами 🇬🇧🇺🇸",
-      "views": 145,
-      "reach": 125,
+      "views": 146,
+      "reach": 126,
       "saved": 0,
       "shares": 0,
       "likes": 14,
       "comments": 0,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 4720,
-      "ig_reels_video_view_total_time": 623169,
+      "ig_reels_avg_watch_time": 4706,
+      "ig_reels_video_view_total_time": 625968,
       "avg_watch_s": 4.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -1419,7 +1463,7 @@
       "ig_reels_avg_watch_time": 5091,
       "ig_reels_video_view_total_time": 763689,
       "avg_watch_s": 5.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.1
     },
     {
@@ -1438,7 +1482,7 @@
       "total_interactions": 15,
       "follows": 1,
       "profile_visits": 4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": null
     },
     {
@@ -1458,8 +1502,8 @@
       "ig_reels_avg_watch_time": 4347,
       "ig_reels_video_view_total_time": 608606,
       "avg_watch_s": 4.3,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 1.1
     },
     {
       "id": "18127990933867120",
@@ -1478,7 +1522,7 @@
       "ig_reels_avg_watch_time": 5037,
       "ig_reels_video_view_total_time": 841209,
       "avg_watch_s": 5,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.3
     },
     {
@@ -1498,7 +1542,7 @@
       "ig_reels_avg_watch_time": 4764,
       "ig_reels_video_view_total_time": 895673,
       "avg_watch_s": 4.8,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.4
     },
     {
@@ -1518,7 +1562,7 @@
       "ig_reels_avg_watch_time": 4655,
       "ig_reels_video_view_total_time": 786861,
       "avg_watch_s": 4.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.3
     },
     {
@@ -1538,8 +1582,8 @@
       "ig_reels_avg_watch_time": 3920,
       "ig_reels_video_view_total_time": 505764,
       "avg_watch_s": 3.9,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 1
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 0.9
     },
     {
       "id": "17915052852531828",
@@ -1558,7 +1602,7 @@
       "ig_reels_avg_watch_time": 4080,
       "ig_reels_video_view_total_time": 591654,
       "avg_watch_s": 4.1,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1
     },
     {
@@ -1578,8 +1622,8 @@
       "ig_reels_avg_watch_time": 6463,
       "ig_reels_video_view_total_time": 3348347,
       "avg_watch_s": 6.5,
-      "as_of": "2026-10-20T07:56:55.864Z",
-      "outlier": 4.2
+      "as_of": "2026-10-21T07:37:58.825Z",
+      "outlier": 4.1
     },
     {
       "id": "18630735418029264",
@@ -1598,7 +1642,7 @@
       "ig_reels_avg_watch_time": 3730,
       "ig_reels_video_view_total_time": 600564,
       "avg_watch_s": 3.7,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 1.3
     },
     {
@@ -1608,17 +1652,17 @@
       "at": "2026-10-03T18:41:49+0000",
       "permalink": "https://www.instagram.com/reel/DeCtv1ViG0O/",
       "title": "Целая встреча в клубе, а сказал ты три фразы. Знакомо?",
-      "views": 411,
+      "views": 414,
       "reach": 300,
-      "saved": 2,
+      "saved": 1,
       "shares": 4,
       "likes": 11,
       "comments": 0,
-      "total_interactions": 17,
-      "ig_reels_avg_watch_time": 6388,
-      "ig_reels_video_view_total_time": 2255300,
-      "avg_watch_s": 6.4,
-      "as_of": "2026-10-20T07:56:55.864Z",
+      "total_interactions": 16,
+      "ig_reels_avg_watch_time": 6347,
+      "ig_reels_video_view_total_time": 2259633,
+      "avg_watch_s": 6.3,
+      "as_of": "2026-10-21T07:37:58.825Z",
       "outlier": 2.8
     }
   ]
