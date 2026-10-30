@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-29T08:58:12.850Z",
+  "updated_at": "2026-10-30T09:03:40.914Z",
   "username": "we_yapp",
-  "followers_count": 19,
-  "median_views": 88,
+  "followers_count": 20,
+  "median_views": 87.5,
   "followers": [
     {
       "date": "2026-10-10",
@@ -83,9 +83,28 @@
     {
       "date": "2026-10-29",
       "count": 19
+    },
+    {
+      "date": "2026-10-30",
+      "count": 20
     }
   ],
   "posts": [
+    {
+      "id": "18035121098909765",
+      "queue_id": null,
+      "type": "post",
+      "at": "2026-10-30T09:00:55+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfHNiNvE4CU",
+      "title": "Отправляй тому, кто в разговоре надеется не на свои знания, ",
+      "views": 0,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0
+    },
     {
       "id": "18099228005667700",
       "queue_id": null,
@@ -93,13 +112,13 @@
       "at": "2026-10-29T05:56:51+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfETrT_k4yb",
       "title": "464 дня кормила сову 🦉 А потом её просто спросили, как прош",
-      "views": 13,
-      "likes": 0,
+      "views": 21,
+      "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "18132837754756507",
@@ -108,13 +127,13 @@
       "at": "2026-10-27T05:56:33+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De_KDVbk1rs",
       "title": "Отправь однокласснику, с которым 10 лет учили английский 🎒",
-      "views": 28,
+      "views": 34,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "17913022143545826",
@@ -123,7 +142,7 @@
       "at": "2026-10-26T14:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De9cmaEm3wF",
       "title": "Сленг в русской речи",
-      "views": 163,
+      "views": 167,
       "likes": 0,
       "replies": 2,
       "reposts": 0,
@@ -138,7 +157,7 @@
       "at": "2026-10-26T10:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De8-We_G0IK",
       "title": "Тема заранее",
-      "views": 15,
+      "views": 18,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -153,7 +172,7 @@
       "at": "2026-10-26T06:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De8mYqykcdA",
       "title": "Veg out",
-      "views": 142,
+      "views": 144,
       "likes": 8,
       "replies": 2,
       "reposts": 0,
@@ -168,7 +187,7 @@
       "at": "2026-10-25T16:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De7FqrJFG_4",
       "title": "Итоги недели (тред)",
-      "views": 138,
+      "views": 139,
       "likes": 0,
       "replies": 6,
       "reposts": 0,
@@ -183,7 +202,7 @@
       "at": "2026-10-25T14:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De64b6IlJRW",
       "title": "Путаешь похожие слова",
-      "views": 228,
+      "views": 229,
       "likes": 2,
       "replies": 0,
       "reposts": 0,
@@ -318,13 +337,13 @@
       "at": "2026-10-23T09:53:24+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1R-6uiNDy",
       "title": "Если ты учишь английский, чтобы говорить, а не сдавать тест,",
-      "views": 120,
+      "views": 129,
       "likes": 3,
       "replies": 0,
       "reposts": 0,
       "quotes": 1,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.5
     },
     {
       "id": "17954005053082276",
@@ -333,7 +352,7 @@
       "at": "2026-10-23T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1NzD0kTsc",
       "title": "Опрос: that's sus",
-      "views": 125,
+      "views": 126,
       "likes": 3,
       "replies": 6,
       "reposts": 0,
@@ -378,7 +397,7 @@
       "at": "2026-10-22T15:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DezQbczEeku",
       "title": "Ответ: I'm all ears",
-      "views": 18,
+      "views": 19,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -408,7 +427,7 @@
       "at": "2026-10-22T09:55:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeyqH8Pm8eJ",
       "title": "Опрос: I'm all ears",
-      "views": 184,
+      "views": 187,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -624,7 +643,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.7
     },
     {
       "id": "17917151259465995",
@@ -789,7 +808,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4
+      "outlier": 4.1
     },
     {
       "id": "18123287122864928",
@@ -820,21 +839,6 @@
       "quotes": 0,
       "shares": 0,
       "outlier": 3.1
-    },
-    {
-      "id": "18487012846129073",
-      "queue_id": "2026-10-16-0930",
-      "type": "post",
-      "at": "2026-10-16T06:30:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/Dei13aSEWye",
-      "title": "Lowkey и highkey",
-      "views": 88,
-      "likes": 2,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 1
     }
   ]
 }

@@ -1,18 +1,19 @@
 # Статистика Threads @we_yapp
 
-Обновлено 29.10, 11:58 МСК. Подписчиков: 19. Медиана просмотров (посты старше 48 ч): 88.
+Обновлено 30.10, 12:03 МСК. Подписчиков: 20. Медиана просмотров (посты старше 48 ч): 87.5.
 «x медианы» - во сколько раз пост обошёл обычный пост. * - вышел меньше 48 ч назад, ещё набирает.
 Тип: post - текст, poll - опрос, thread - тред с продолжением (цифры только по первому посту).
 
 | Вышел (МСК) | Тип | Просмотры | x медианы | Лайки | Ответы | Репосты | Цитаты | Поделились | Пост |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 29.10, 08:56* | post | 13 | 0.1 | 0 | 0 | 0 | 0 | 0 | [464 дня кормила сову 🦉 А потом её просто спросили, как прош](https://www.threads.com/@we_yapp/post/DfETrT_k4yb) |
-| 27.10, 08:56 | post | 28 | 0.3 | 1 | 0 | 0 | 0 | 0 | [Отправь однокласснику, с которым 10 лет учили английский 🎒](https://www.threads.com/@we_yapp/post/De_KDVbk1rs) |
-| 26.10, 17:30 | post | 163 | 1.9 | 0 | 2 | 0 | 0 | 0 | [Сленг в русской речи](https://www.threads.com/@we_yapp/post/De9cmaEm3wF) |
-| 26.10, 13:05 | post | 15 | 0.2 | 0 | 0 | 0 | 0 | 0 | [Тема заранее](https://www.threads.com/@we_yapp/post/De8-We_G0IK) |
-| 26.10, 09:35 | post | 142 | 1.6 | 8 | 2 | 0 | 0 | 0 | [Veg out](https://www.threads.com/@we_yapp/post/De8mYqykcdA) |
-| 25.10, 19:30 | thread | 138 | 1.6 | 0 | 6 | 0 | 0 | 0 | [Итоги недели (тред)](https://www.threads.com/@we_yapp/post/De7FqrJFG_4) |
-| 25.10, 17:35 | post | 228 | 2.6 | 2 | 0 | 0 | 0 | 0 | [Путаешь похожие слова](https://www.threads.com/@we_yapp/post/De64b6IlJRW) |
+| 30.10, 12:00* | post | 0 | 0 | 0 | 0 | 0 | 0 | 0 | [Отправляй тому, кто в разговоре надеется не на свои знания, ](https://www.threads.com/@we_yapp/post/DfHNiNvE4CU) |
+| 29.10, 08:56* | post | 21 | 0.2 | 1 | 0 | 0 | 0 | 0 | [464 дня кормила сову 🦉 А потом её просто спросили, как прош](https://www.threads.com/@we_yapp/post/DfETrT_k4yb) |
+| 27.10, 08:56 | post | 34 | 0.4 | 1 | 0 | 0 | 0 | 0 | [Отправь однокласснику, с которым 10 лет учили английский 🎒](https://www.threads.com/@we_yapp/post/De_KDVbk1rs) |
+| 26.10, 17:30 | post | 167 | 1.9 | 0 | 2 | 0 | 0 | 0 | [Сленг в русской речи](https://www.threads.com/@we_yapp/post/De9cmaEm3wF) |
+| 26.10, 13:05 | post | 18 | 0.2 | 0 | 0 | 0 | 0 | 0 | [Тема заранее](https://www.threads.com/@we_yapp/post/De8-We_G0IK) |
+| 26.10, 09:35 | post | 144 | 1.6 | 8 | 2 | 0 | 0 | 0 | [Veg out](https://www.threads.com/@we_yapp/post/De8mYqykcdA) |
+| 25.10, 19:30 | thread | 139 | 1.6 | 0 | 6 | 0 | 0 | 0 | [Итоги недели (тред)](https://www.threads.com/@we_yapp/post/De7FqrJFG_4) |
+| 25.10, 17:35 | post | 229 | 2.6 | 2 | 0 | 0 | 0 | 0 | [Путаешь похожие слова](https://www.threads.com/@we_yapp/post/De64b6IlJRW) |
 | 25.10, 13:25 | poll | 53 | 0.6 | 0 | 2 | 0 | 0 | 0 | [Опрос: когда удобно говорить](https://www.threads.com/@we_yapp/post/De6b0nMHD3r) |
 | 25.10, 10:05 | post | 349 | 4 | 16 | 4 | 1 | 0 | 0 | [Sleep in](https://www.threads.com/@we_yapp/post/De6FB07G2cY) |
 | 24.10, 19:40 | thread | 196 | 2.2 | 1 | 6 | 0 | 0 | 0 | [Слова с немыми буквами (тред)](https://www.threads.com/@we_yapp/post/De4h7irGnf2) |
@@ -21,13 +22,13 @@
 | 24.10, 10:10 | post | 300 | 3.4 | 11 | 0 | 0 | 0 | 0 | [Слово дня: cozy](https://www.threads.com/@we_yapp/post/De3gwSOEZGj) |
 | 23.10, 19:35 | thread | 66 | 0.8 | 1 | 6 | 0 | 0 | 0 | [Сленг Gen Z (тред)](https://www.threads.com/@we_yapp/post/De18jVuGjO2) |
 | 23.10, 17:25 | post | 22 | 0.3 | 0 | 0 | 0 | 0 | 0 | [Ответ: sus](https://www.threads.com/@we_yapp/post/De1tv4Xm0dr) |
-| 23.10, 12:53 | post | 120 | 1.4 | 3 | 0 | 0 | 1 | 0 | [Если ты учишь английский, чтобы говорить, а не сдавать тест,](https://www.threads.com/@we_yapp/post/De1R-6uiNDy) |
-| 23.10, 12:45 | poll | 125 | 1.4 | 3 | 6 | 0 | 0 | 0 | [Опрос: that's sus](https://www.threads.com/@we_yapp/post/De1NzD0kTsc) |
+| 23.10, 12:53 | post | 129 | 1.5 | 3 | 0 | 0 | 1 | 0 | [Если ты учишь английский, чтобы говорить, а не сдавать тест,](https://www.threads.com/@we_yapp/post/De1R-6uiNDy) |
+| 23.10, 12:45 | poll | 126 | 1.4 | 3 | 6 | 0 | 0 | 0 | [Опрос: that's sus](https://www.threads.com/@we_yapp/post/De1NzD0kTsc) |
 | 23.10, 09:30 | post | 188 | 2.1 | 6 | 0 | 0 | 0 | 0 | [Rizz](https://www.threads.com/@we_yapp/post/De03Y44ka7J) |
 | 22.10, 21:05 | thread | 34 | 0.4 | 3 | 8 | 0 | 0 | 0 | [Ещё наши фразы по-английски (тред)](https://www.threads.com/@we_yapp/post/DeziL7mlOEz) |
-| 22.10, 18:30 | post | 18 | 0.2 | 1 | 0 | 0 | 0 | 0 | [Ответ: I'm all ears](https://www.threads.com/@we_yapp/post/DezQbczEeku) |
+| 22.10, 18:30 | post | 19 | 0.2 | 1 | 0 | 0 | 0 | 0 | [Ответ: I'm all ears](https://www.threads.com/@we_yapp/post/DezQbczEeku) |
 | 22.10, 16:05 | post | 141 | 1.6 | 2 | 3 | 0 | 0 | 0 | [Задание: вид из окна](https://www.threads.com/@we_yapp/post/Dey_w09kd1I) |
-| 22.10, 12:55 | poll | 184 | 2.1 | 1 | 0 | 0 | 0 | 0 | [Опрос: I'm all ears](https://www.threads.com/@we_yapp/post/DeyqH8Pm8eJ) |
+| 22.10, 12:55 | poll | 187 | 2.1 | 1 | 0 | 0 | 0 | 0 | [Опрос: I'm all ears](https://www.threads.com/@we_yapp/post/DeyqH8Pm8eJ) |
 | 22.10, 09:40 | post | 56 | 0.6 | 1 | 0 | 0 | 0 | 0 | [I'm running late](https://www.threads.com/@we_yapp/post/DeyTtUFm-9u) |
 | 21.10, 21:00 | thread | 246 | 2.8 | 2 | 6 | 0 | 0 | 0 | [Признаки B2 (тред)](https://www.threads.com/@we_yapp/post/Dew82O3mmQZ) |
 | 21.10, 18:35 | post | 33 | 0.4 | 1 | 0 | 0 | 0 | 0 | [Что значит свободно](https://www.threads.com/@we_yapp/post/DewsPCVGwkj) |
@@ -41,7 +42,7 @@
 | 20.10, 09:40 | poll | 14 | 0.2 | 0 | 0 | 0 | 0 | 0 | [Опрос: как практикуешь разговор](https://www.threads.com/@we_yapp/post/DetKF_9lfRP) |
 | 19.10, 21:10 | thread | 33 | 0.4 | 1 | 6 | 0 | 0 | 0 | [Наши фразы по-английски (тред)](https://www.threads.com/@we_yapp/post/Der0RTumhFP) |
 | 19.10, 18:20 | post | 34 | 0.4 | 0 | 0 | 0 | 0 | 0 | [Ответ: spill the tea](https://www.threads.com/@we_yapp/post/Derg1TdmhGo) |
-| 19.10, 15:50 | post | 145 | 1.6 | 0 | 4 | 0 | 0 | 0 | [Слово, которое произносил неправильно](https://www.threads.com/@we_yapp/post/DerPyzKm0yZ) |
+| 19.10, 15:50 | post | 145 | 1.7 | 0 | 4 | 0 | 0 | 0 | [Слово, которое произносил неправильно](https://www.threads.com/@we_yapp/post/DerPyzKm0yZ) |
 | 19.10, 12:45 | poll | 134 | 1.5 | 0 | 0 | 0 | 0 | 0 | [Опрос: spill the tea](https://www.threads.com/@we_yapp/post/Deq6eNrEZ_a) |
 | 19.10, 09:35 | post | 91 | 1 | 1 | 0 | 0 | 0 | 0 | [A case of the Mondays](https://www.threads.com/@we_yapp/post/Deqk4DBkZWe) |
 | 18.10, 21:10 | post | 310 | 3.5 | 0 | 0 | 0 | 0 | 0 | [Итог недели](https://www.threads.com/@we_yapp/post/DepPaQMnTOn) |
@@ -52,7 +53,6 @@
 | 17.10, 18:20 | post | 58 | 0.7 | 2 | 0 | 0 | 0 | 0 | [Субтитры - не читерство](https://www.threads.com/@we_yapp/post/DemXPnwFLxT) |
 | 17.10, 13:50 | post | 59 | 0.7 | 1 | 0 | 0 | 0 | 0 | [Что смотришь на английском](https://www.threads.com/@we_yapp/post/Del4UvhlozV) |
 | 17.10, 10:10 | post | 75 | 0.9 | 2 | 0 | 0 | 0 | 0 | [Слово дня: awkward](https://www.threads.com/@we_yapp/post/DelfNy0FZiq) |
-| 16.10, 21:25 | thread | 356 | 4 | 1 | 6 | 0 | 0 | 0 | [Британский сленг (тред)](https://www.threads.com/@we_yapp/post/DekHmraibiG) |
+| 16.10, 21:25 | thread | 356 | 4.1 | 1 | 6 | 0 | 0 | 0 | [Британский сленг (тред)](https://www.threads.com/@we_yapp/post/DekHmraibiG) |
 | 16.10, 18:25 | post | 172 | 2 | 1 | 0 | 0 | 0 | 0 | [Ответ: It's not that deep](https://www.threads.com/@we_yapp/post/DejzFC8Ffc8) |
 | 16.10, 13:15 | poll | 273 | 3.1 | 0 | 0 | 0 | 0 | 0 | [Опрос: It's not that deep](https://www.threads.com/@we_yapp/post/DejPrOZm4Ca) |
-| 16.10, 09:30 | post | 88 | 1 | 2 | 0 | 0 | 0 | 0 | [Lowkey и highkey](https://www.threads.com/@we_yapp/post/Dei13aSEWye) |
