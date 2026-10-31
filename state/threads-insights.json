@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-30T09:03:40.914Z",
+  "updated_at": "2026-10-31T08:57:34.273Z",
   "username": "we_yapp",
   "followers_count": 20,
-  "median_views": 87.5,
+  "median_views": 84,
   "followers": [
     {
       "date": "2026-10-10",
@@ -87,6 +87,10 @@
     {
       "date": "2026-10-30",
       "count": 20
+    },
+    {
+      "date": "2026-10-31",
+      "count": 20
     }
   ],
   "posts": [
@@ -97,13 +101,13 @@
       "at": "2026-10-30T09:00:55+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfHNiNvE4CU",
       "title": "Отправляй тому, кто в разговоре надеется не на свои знания, ",
-      "views": 0,
+      "views": 9,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0
+      "outlier": 0.1
     },
     {
       "id": "18099228005667700",
@@ -112,13 +116,13 @@
       "at": "2026-10-29T05:56:51+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfETrT_k4yb",
       "title": "464 дня кормила сову 🦉 А потом её просто спросили, как прош",
-      "views": 21,
+      "views": 22,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "18132837754756507",
@@ -148,7 +152,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.9
+      "outlier": 2
     },
     {
       "id": "17952896967317359",
@@ -178,7 +182,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.7
     },
     {
       "id": "18421967914157981",
@@ -193,7 +197,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.7
     },
     {
       "id": "18045942617827705",
@@ -208,7 +212,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.6
+      "outlier": 2.7
     },
     {
       "id": "18132851549496237",
@@ -238,7 +242,7 @@
       "reposts": 1,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4
+      "outlier": 4.2
     },
     {
       "id": "18130446817837648",
@@ -253,7 +257,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.3
     },
     {
       "id": "17934189186409143",
@@ -268,7 +272,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5.7
+      "outlier": 6
     },
     {
       "id": "17976406250937099",
@@ -298,7 +302,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.4
+      "outlier": 3.6
     },
     {
       "id": "18210211060318712",
@@ -337,7 +341,7 @@
       "at": "2026-10-23T09:53:24+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1R-6uiNDy",
       "title": "Если ты учишь английский, чтобы говорить, а не сдавать тест,",
-      "views": 129,
+      "views": 130,
       "likes": 3,
       "replies": 0,
       "reposts": 0,
@@ -352,13 +356,13 @@
       "at": "2026-10-23T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1NzD0kTsc",
       "title": "Опрос: that's sus",
-      "views": 126,
+      "views": 127,
       "likes": 3,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.5
     },
     {
       "id": "18482652913115156",
@@ -373,7 +377,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.1
+      "outlier": 2.2
     },
     {
       "id": "17963767290218337",
@@ -418,7 +422,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.7
     },
     {
       "id": "18346151941255514",
@@ -427,13 +431,13 @@
       "at": "2026-10-22T09:55:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeyqH8Pm8eJ",
       "title": "Опрос: I'm all ears",
-      "views": 187,
+      "views": 188,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.1
+      "outlier": 2.2
     },
     {
       "id": "18435778276181295",
@@ -448,7 +452,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18060508145555204",
@@ -463,7 +467,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.8
+      "outlier": 2.9
     },
     {
       "id": "18091648799219965",
@@ -493,7 +497,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.6
     },
     {
       "id": "18114786806115247",
@@ -523,7 +527,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "18118524205953507",
@@ -538,7 +542,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "18413253910090644",
@@ -568,7 +572,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3
+      "outlier": 3.1
     },
     {
       "id": "18126742021871181",
@@ -652,13 +656,13 @@
       "at": "2026-10-19T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Deq6eNrEZ_a",
       "title": "Опрос: spill the tea",
-      "views": 134,
+      "views": 135,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.6
     },
     {
       "id": "18141239983720453",
@@ -673,7 +677,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.1
     },
     {
       "id": "18218307232358262",
@@ -688,7 +692,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.5
+      "outlier": 3.7
     },
     {
       "id": "18060656804538993",
@@ -703,7 +707,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 4.8
+      "outlier": 5
     },
     {
       "id": "17999654462823156",
@@ -808,7 +812,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.1
+      "outlier": 4.2
     },
     {
       "id": "18123287122864928",
@@ -832,13 +836,13 @@
       "at": "2026-10-16T10:15:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DejPrOZm4Ca",
       "title": "Опрос: It's not that deep",
-      "views": 273,
+      "views": 274,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.1
+      "outlier": 3.3
     }
   ]
 }
