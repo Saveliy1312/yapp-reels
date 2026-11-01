@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-31T08:57:34.273Z",
+  "updated_at": "2026-11-01T09:47:29.664Z",
   "username": "we_yapp",
-  "followers_count": 20,
-  "median_views": 84,
+  "followers_count": 19,
+  "median_views": 79.5,
   "followers": [
     {
       "date": "2026-10-10",
@@ -91,6 +91,10 @@
     {
       "date": "2026-10-31",
       "count": 20
+    },
+    {
+      "date": "2026-11-01",
+      "count": 19
     }
   ],
   "posts": [
@@ -152,7 +156,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2
+      "outlier": 2.1
     },
     {
       "id": "17952896967317359",
@@ -182,7 +186,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.8
     },
     {
       "id": "18421967914157981",
@@ -212,7 +216,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.7
+      "outlier": 2.9
     },
     {
       "id": "18132851549496237",
@@ -227,7 +231,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "17914514103284717",
@@ -242,7 +246,7 @@
       "reposts": 1,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.2
+      "outlier": 4.4
     },
     {
       "id": "18130446817837648",
@@ -257,7 +261,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.3
+      "outlier": 2.5
     },
     {
       "id": "17934189186409143",
@@ -272,7 +276,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 6
+      "outlier": 6.3
     },
     {
       "id": "17976406250937099",
@@ -302,7 +306,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.6
+      "outlier": 3.8
     },
     {
       "id": "18210211060318712",
@@ -311,7 +315,7 @@
       "at": "2026-10-23T16:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De18jVuGjO2",
       "title": "Сленг Gen Z (тред)",
-      "views": 66,
+      "views": 67,
       "likes": 1,
       "replies": 6,
       "reposts": 0,
@@ -341,13 +345,13 @@
       "at": "2026-10-23T09:53:24+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1R-6uiNDy",
       "title": "Если ты учишь английский, чтобы говорить, а не сдавать тест,",
-      "views": 130,
+      "views": 131,
       "likes": 3,
       "replies": 0,
       "reposts": 0,
       "quotes": 1,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.6
     },
     {
       "id": "17954005053082276",
@@ -362,7 +366,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.6
     },
     {
       "id": "18482652913115156",
@@ -377,7 +381,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.4
     },
     {
       "id": "17963767290218337",
@@ -422,7 +426,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.8
     },
     {
       "id": "18346151941255514",
@@ -431,13 +435,13 @@
       "at": "2026-10-22T09:55:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DeyqH8Pm8eJ",
       "title": "Опрос: I'm all ears",
-      "views": 188,
+      "views": 189,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.4
     },
     {
       "id": "18435778276181295",
@@ -467,7 +471,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.9
+      "outlier": 3.1
     },
     {
       "id": "18091648799219965",
@@ -572,7 +576,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.1
+      "outlier": 3.3
     },
     {
       "id": "18126742021871181",
@@ -587,7 +591,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.1
     },
     {
       "id": "18233327023324747",
@@ -647,7 +651,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.8
     },
     {
       "id": "17917151259465995",
@@ -662,7 +666,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.7
     },
     {
       "id": "18141239983720453",
@@ -692,7 +696,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.7
+      "outlier": 3.9
     },
     {
       "id": "18060656804538993",
@@ -707,7 +711,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 5
+      "outlier": 5.3
     },
     {
       "id": "17999654462823156",
@@ -722,7 +726,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.5
     },
     {
       "id": "17960785452246890",
@@ -812,7 +816,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.2
+      "outlier": 4.5
     },
     {
       "id": "18123287122864928",
@@ -827,7 +831,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2
+      "outlier": 2.2
     },
     {
       "id": "18116195087611006",
@@ -842,7 +846,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.4
     }
   ]
 }
