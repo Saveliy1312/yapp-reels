@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-01T09:47:29.664Z",
+  "updated_at": "2026-11-02T10:05:01.583Z",
   "username": "we_yapp",
   "followers_count": 19,
-  "median_views": 79.5,
+  "median_views": 71,
   "followers": [
     {
       "date": "2026-10-10",
@@ -95,17 +95,36 @@
     {
       "date": "2026-11-01",
       "count": 19
+    },
+    {
+      "date": "2026-11-02",
+      "count": 19
     }
   ],
   "posts": [
     {
-      "id": "18035121098909765",
+      "id": "17918338197471059",
+      "queue_id": "2026-11-02-1105",
+      "type": "post",
+      "at": "2026-11-02T08:05:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfOySDhFW6c",
+      "title": "Раскачиваюсь",
+      "views": 48,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.7
+    },
+    {
+      "id": "18098180423391920",
       "queue_id": null,
       "type": "post",
-      "at": "2026-10-30T09:00:55+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfHNiNvE4CU",
-      "title": "Отправляй тому, кто в разговоре надеется не на свои знания, ",
-      "views": 9,
+      "at": "2026-11-02T07:18:23+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfOwLvQCEMF",
+      "title": "норм или стрём: версия свидания с иностранцем",
+      "views": 8,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -114,13 +133,28 @@
       "outlier": 0.1
     },
     {
+      "id": "18035121098909765",
+      "queue_id": null,
+      "type": "post",
+      "at": "2026-10-30T09:00:55+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfHNiNvE4CU",
+      "title": "Отправляй тому, кто в разговоре надеется не на свои знания, ",
+      "views": 11,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.2
+    },
+    {
       "id": "18099228005667700",
       "queue_id": null,
       "type": "post",
       "at": "2026-10-29T05:56:51+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfETrT_k4yb",
       "title": "464 дня кормила сову 🦉 А потом её просто спросили, как прош",
-      "views": 22,
+      "views": 23,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -141,7 +175,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "17913022143545826",
@@ -156,7 +190,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.1
+      "outlier": 2.4
     },
     {
       "id": "17952896967317359",
@@ -171,7 +205,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "18128115992483588",
@@ -186,7 +220,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 2
     },
     {
       "id": "18421967914157981",
@@ -201,7 +235,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 2
     },
     {
       "id": "18045942617827705",
@@ -216,7 +250,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.9
+      "outlier": 3.2
     },
     {
       "id": "18132851549496237",
@@ -246,7 +280,7 @@
       "reposts": 1,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.4
+      "outlier": 4.9
     },
     {
       "id": "18130446817837648",
@@ -261,7 +295,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.5
+      "outlier": 2.8
     },
     {
       "id": "17934189186409143",
@@ -276,7 +310,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 6.3
+      "outlier": 7.1
     },
     {
       "id": "17976406250937099",
@@ -291,7 +325,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18240548419318084",
@@ -306,7 +340,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.8
+      "outlier": 4.2
     },
     {
       "id": "18210211060318712",
@@ -321,7 +355,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.9
     },
     {
       "id": "18148181737569431",
@@ -345,13 +379,13 @@
       "at": "2026-10-23T09:53:24+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1R-6uiNDy",
       "title": "Если ты учишь английский, чтобы говорить, а не сдавать тест,",
-      "views": 131,
+      "views": 137,
       "likes": 3,
       "replies": 0,
       "reposts": 0,
       "quotes": 1,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.9
     },
     {
       "id": "17954005053082276",
@@ -360,13 +394,13 @@
       "at": "2026-10-23T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/De1NzD0kTsc",
       "title": "Опрос: that's sus",
-      "views": 127,
+      "views": 129,
       "likes": 3,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.6
+      "outlier": 1.8
     },
     {
       "id": "18482652913115156",
@@ -381,7 +415,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.4
+      "outlier": 2.6
     },
     {
       "id": "17963767290218337",
@@ -396,7 +430,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18144712315598232",
@@ -411,7 +445,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "17955916350268310",
@@ -426,7 +460,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 2
     },
     {
       "id": "18346151941255514",
@@ -441,7 +475,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.4
+      "outlier": 2.7
     },
     {
       "id": "18435778276181295",
@@ -456,7 +490,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "18060508145555204",
@@ -471,7 +505,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.1
+      "outlier": 3.5
     },
     {
       "id": "18091648799219965",
@@ -486,7 +520,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18057383030569333",
@@ -501,7 +535,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18114786806115247",
@@ -531,7 +565,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.9
     },
     {
       "id": "18118524205953507",
@@ -546,7 +580,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.9
     },
     {
       "id": "18413253910090644",
@@ -561,7 +595,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "17908803624325917",
@@ -576,7 +610,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.7
     },
     {
       "id": "18126742021871181",
@@ -591,7 +625,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.2
     },
     {
       "id": "18233327023324747",
@@ -621,7 +655,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18107442752098440",
@@ -636,7 +670,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "18021116573730230",
@@ -651,7 +685,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 2
     },
     {
       "id": "17917151259465995",
@@ -666,7 +700,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.9
     },
     {
       "id": "18141239983720453",
@@ -681,7 +715,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.3
     },
     {
       "id": "18218307232358262",
@@ -696,7 +730,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.9
+      "outlier": 4.4
     },
     {
       "id": "18060656804538993",
@@ -711,7 +745,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 5.3
+      "outlier": 5.9
     },
     {
       "id": "17999654462823156",
@@ -726,7 +760,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.7
     },
     {
       "id": "17960785452246890",
@@ -756,7 +790,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "18103352975645694",
@@ -771,7 +805,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "17907040923587582",
@@ -786,7 +820,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "18121669226470953",
@@ -801,7 +835,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 1.1
     },
     {
       "id": "18108166577265553",
@@ -816,37 +850,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.5
-    },
-    {
-      "id": "18123287122864928",
-      "queue_id": "2026-10-16-1825",
-      "type": "post",
-      "at": "2026-10-16T15:25:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DejzFC8Ffc8",
-      "title": "Ответ: It's not that deep",
-      "views": 172,
-      "likes": 1,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 2.2
-    },
-    {
-      "id": "18116195087611006",
-      "queue_id": "2026-10-16-1315",
-      "type": "poll",
-      "at": "2026-10-16T10:15:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DejPrOZm4Ca",
-      "title": "Опрос: It's not that deep",
-      "views": 274,
-      "likes": 0,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 3.4
+      "outlier": 5
     }
   ]
 }
