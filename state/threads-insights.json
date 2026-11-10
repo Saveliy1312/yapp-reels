@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-09T10:26:04.611Z",
+  "updated_at": "2026-11-10T10:30:03.259Z",
   "username": "we_yapp",
   "followers_count": 29,
-  "median_views": 46,
+  "median_views": 53,
   "followers": [
     {
       "date": "2026-10-10",
@@ -127,16 +127,20 @@
     {
       "date": "2026-11-09",
       "count": 29
+    },
+    {
+      "date": "2026-11-10",
+      "count": 29
     }
   ],
   "posts": [
     {
-      "id": "17949720858070980",
-      "queue_id": "2026-11-09-1250",
+      "id": "18102701954410785",
+      "queue_id": "2026-11-10-1255",
       "type": "poll",
-      "at": "2026-11-09T09:50:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/Dfg_0_dGxUI",
-      "title": "Опрос cold feet",
+      "at": "2026-11-10T09:55:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfjlM49G7bB",
+      "title": "Опрос under the weather",
       "views": 1,
       "likes": 0,
       "replies": 1,
@@ -146,19 +150,79 @@
       "outlier": 0
     },
     {
+      "id": "18125288428927792",
+      "queue_id": "2026-11-10-1100",
+      "type": "post",
+      "at": "2026-11-10T08:00:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfjYBM3G0bH",
+      "title": "Вырубиться",
+      "views": 110,
+      "likes": 1,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 2.1
+    },
+    {
+      "id": "18059039687595046",
+      "queue_id": "2026-11-09-2005",
+      "type": "thread",
+      "at": "2026-11-09T17:05:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfhxhwPGlOT",
+      "title": "Признаки C1 (тред)",
+      "views": 807,
+      "likes": 3,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 15.2
+    },
+    {
+      "id": "18133245676874910",
+      "queue_id": "2026-11-09-1735",
+      "type": "post",
+      "at": "2026-11-09T14:35:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfhgUXokcCc",
+      "title": "Фраза из учебника",
+      "views": 120,
+      "likes": 1,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 2.3
+    },
+    {
+      "id": "17949720858070980",
+      "queue_id": "2026-11-09-1250",
+      "type": "poll",
+      "at": "2026-11-09T09:50:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Dfg_0_dGxUI",
+      "title": "Опрос cold feet",
+      "views": 15,
+      "likes": 0,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
       "id": "18116785472521690",
       "queue_id": "2026-11-09-1105",
       "type": "post",
       "at": "2026-11-09T08:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfgz1h0G_om",
       "title": "Мне лень",
-      "views": 133,
+      "views": 172,
       "likes": 3,
-      "replies": 1,
+      "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.9
+      "outlier": 3.2
     },
     {
       "id": "18166035454498840",
@@ -167,7 +231,7 @@
       "at": "2026-11-08T17:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DffMKSSm7vl",
       "title": "Неделя в одном диалоге (тред)",
-      "views": 7,
+      "views": 8,
       "likes": 0,
       "replies": 5,
       "reposts": 0,
@@ -182,13 +246,13 @@
       "at": "2026-11-08T14:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfe7EB9ldGy",
       "title": "Фраза недели",
-      "views": 81,
+      "views": 84,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 1.6
     },
     {
       "id": "17927114457432728",
@@ -197,13 +261,13 @@
       "at": "2026-11-08T10:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfefo2AGxAS",
       "title": "Опрос: an arm and a leg",
-      "views": 42,
+      "views": 83,
       "likes": 1,
       "replies": 1,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 1.6
     },
     {
       "id": "18116923088581676",
@@ -212,13 +276,13 @@
       "at": "2026-11-08T07:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfeLmOuG4IM",
       "title": "Не торопись",
-      "views": 235,
+      "views": 243,
       "likes": 4,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5.1
+      "outlier": 4.6
     },
     {
       "id": "18644871331033416",
@@ -227,13 +291,13 @@
       "at": "2026-11-07T17:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfcnV5ulJd2",
       "title": "США и Британия: разные значения (тред)",
-      "views": 189,
+      "views": 190,
       "likes": 1,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.1
+      "outlier": 3.6
     },
     {
       "id": "18286269412294654",
@@ -248,7 +312,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.8
+      "outlier": 1.6
     },
     {
       "id": "18121638698471734",
@@ -257,13 +321,13 @@
       "at": "2026-11-07T10:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfb7ZfpFpZW",
       "title": "Опрос: I'm down",
-      "views": 50,
+      "views": 55,
       "likes": 0,
       "replies": 3,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1
     },
     {
       "id": "18126966064979040",
@@ -272,13 +336,13 @@
       "at": "2026-11-07T07:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfbmFjTlr05",
       "title": "Слово дня: snug",
-      "views": 277,
+      "views": 281,
       "likes": 11,
       "replies": 4,
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 6
+      "outlier": 5.3
     },
     {
       "id": "18016853537969704",
@@ -287,13 +351,13 @@
       "at": "2026-11-06T17:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfaCkj3FF-E",
       "title": "Австралийский сленг (тред)",
-      "views": 689,
+      "views": 690,
       "likes": 4,
       "replies": 18,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 15
+      "outlier": 13
     },
     {
       "id": "18140405227713723",
@@ -308,7 +372,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.5
     },
     {
       "id": "18212522383367724",
@@ -338,7 +402,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 0.9
     },
     {
       "id": "17964514914211173",
@@ -353,7 +417,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.2
     },
     {
       "id": "18138071905672044",
@@ -383,7 +447,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "18429615766151384",
@@ -398,7 +462,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.6
     },
     {
       "id": "18126615955916211",
@@ -413,7 +477,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 16.7
+      "outlier": 14.5
     },
     {
       "id": "18102552128182568",
@@ -428,7 +492,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18448978603131096",
@@ -443,7 +507,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.7
     },
     {
       "id": "18108920702206467",
@@ -458,7 +522,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 1.1
+      "outlier": 1
     },
     {
       "id": "18214744396365406",
@@ -473,7 +537,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.4
     },
     {
       "id": "18105855302373516",
@@ -503,7 +567,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "18112335422351370",
@@ -512,7 +576,7 @@
       "at": "2026-11-03T09:01:29+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfRgyNKCLHn",
       "title": "Учишь английский, чтобы говорить, а не чтобы сдать тест? Тог",
-      "views": 42,
+      "views": 46,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -533,7 +597,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18114989966161268",
@@ -548,7 +612,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.9
+      "outlier": 4.3
     },
     {
       "id": "18136101772738354",
@@ -563,7 +627,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 1.6
+      "outlier": 1.4
     },
     {
       "id": "17885485044627775",
@@ -578,7 +642,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.4
     },
     {
       "id": "17918338197471059",
@@ -593,7 +657,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.3
     },
     {
       "id": "18098180423391920",
@@ -608,7 +672,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "18035121098909765",
@@ -623,7 +687,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "18099228005667700",
@@ -653,7 +717,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.7
     },
     {
       "id": "17913022143545826",
@@ -668,7 +732,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.7
+      "outlier": 3.2
     },
     {
       "id": "17952896967317359",
@@ -698,7 +762,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.2
+      "outlier": 2.8
     },
     {
       "id": "18421967914157981",
@@ -713,7 +777,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.1
+      "outlier": 2.7
     },
     {
       "id": "18045942617827705",
@@ -728,7 +792,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5
+      "outlier": 4.3
     },
     {
       "id": "18132851549496237",
@@ -743,7 +807,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.2
+      "outlier": 1
     },
     {
       "id": "17914514103284717",
@@ -758,7 +822,7 @@
       "reposts": 1,
       "quotes": 0,
       "shares": 0,
-      "outlier": 7.7
+      "outlier": 6.6
     },
     {
       "id": "18130446817837648",
@@ -773,7 +837,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.3
+      "outlier": 3.7
     },
     {
       "id": "17934189186409143",
@@ -788,7 +852,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 10.9
+      "outlier": 9.5
     },
     {
       "id": "17976406250937099",
@@ -803,7 +867,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.5
     },
     {
       "id": "18240548419318084",
@@ -818,67 +882,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 6.6
-    },
-    {
-      "id": "18210211060318712",
-      "queue_id": "2026-10-23-1935",
-      "type": "thread",
-      "at": "2026-10-23T16:35:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/De18jVuGjO2",
-      "title": "Сленг Gen Z (тред)",
-      "views": 68,
-      "likes": 1,
-      "replies": 6,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 1.5
-    },
-    {
-      "id": "18148181737569431",
-      "queue_id": "2026-10-23-1725",
-      "type": "post",
-      "at": "2026-10-23T14:25:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/De1tv4Xm0dr",
-      "title": "Ответ: sus",
-      "views": 23,
-      "likes": 0,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.5
-    },
-    {
-      "id": "18125112115927855",
-      "queue_id": null,
-      "type": "post",
-      "at": "2026-10-23T09:53:24+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/De1R-6uiNDy",
-      "title": "Если ты учишь английский, чтобы говорить, а не сдавать тест,",
-      "views": 150,
-      "likes": 3,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 1,
-      "shares": 0,
-      "outlier": 3.3
-    },
-    {
-      "id": "17954005053082276",
-      "queue_id": "2026-10-23-1245",
-      "type": "poll",
-      "at": "2026-10-23T09:45:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/De1NzD0kTsc",
-      "title": "Опрос: that's sus",
-      "views": 130,
-      "likes": 3,
-      "replies": 6,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 2.8
+      "outlier": 5.7
     }
   ]
 }
