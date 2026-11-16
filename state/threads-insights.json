@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-15T09:58:19.102Z",
+  "updated_at": "2026-11-16T10:12:29.098Z",
   "username": "we_yapp",
   "followers_count": 36,
-  "median_views": 52.5,
+  "median_views": 53,
   "followers": [
     {
       "date": "2026-10-10",
@@ -151,9 +151,43 @@
     {
       "date": "2026-11-15",
       "count": 36
+    },
+    {
+      "date": "2026-11-16",
+      "count": 36
     }
   ],
   "posts": [
+    {
+      "id": "18161185063512214",
+      "queue_id": "2026-11-15-1935",
+      "type": "thread",
+      "at": "2026-11-15T16:35:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DfxK21AFGiH",
+      "title": "Затянувшийся B1 (тред)",
+      "views": 16,
+      "likes": 0,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
+      "id": "18118967825109573",
+      "queue_id": "2026-11-15-1705",
+      "type": "post",
+      "at": "2026-11-15T14:05:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Dfw507FFRJR",
+      "title": "Книга на английском",
+      "views": 102,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 1.9
+    },
     {
       "id": "17956202685336649",
       "queue_id": "2026-11-15-1230",
@@ -161,13 +195,13 @@
       "at": "2026-11-15T09:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfwaV16FbmH",
       "title": "Опрос salty",
-      "views": 3,
+      "views": 13,
       "likes": 1,
       "replies": 1,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "18145164580716403",
@@ -176,13 +210,13 @@
       "at": "2026-11-15T07:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfwNH3RFqa7",
       "title": "Pajama day",
-      "views": 4,
+      "views": 13,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.1
+      "outlier": 0.2
     },
     {
       "id": "17996770857059438",
@@ -191,7 +225,7 @@
       "at": "2026-11-14T16:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfuleFSEQvb",
       "title": "Как сказать нет (тред)",
-      "views": 50,
+      "views": 54,
       "likes": 0,
       "replies": 6,
       "reposts": 0,
@@ -206,7 +240,7 @@
       "at": "2026-11-14T14:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfuUevVkTeU",
       "title": "Первая фраза в поездку",
-      "views": 25,
+      "views": 26,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -242,7 +276,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18182910808451545",
@@ -257,7 +291,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5.1
+      "outlier": 5
     },
     {
       "id": "18131414555510475",
@@ -281,7 +315,7 @@
       "at": "2026-11-13T09:50:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfrS5synNFc",
       "title": "Опрос hit the hay",
-      "views": 44,
+      "views": 45,
       "likes": 0,
       "replies": 1,
       "reposts": 0,
@@ -317,7 +351,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.5
     },
     {
       "id": "18168243571510584",
@@ -326,13 +360,13 @@
       "at": "2026-11-12T14:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfpOtg7m-V6",
       "title": "Песня наугад",
-      "views": 240,
+      "views": 241,
       "likes": 2,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.6
+      "outlier": 4.5
     },
     {
       "id": "18133285495789096",
@@ -401,7 +435,7 @@
       "at": "2026-11-11T09:45:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfmIt2NFe_F",
       "title": "Опрос slaps",
-      "views": 33,
+      "views": 34,
       "likes": 2,
       "replies": 1,
       "reposts": 0,
@@ -416,7 +450,7 @@
       "at": "2026-11-11T08:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfl9Y_KlQsZ",
       "title": "Заедать стресс",
-      "views": 53,
+      "views": 54,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
@@ -437,7 +471,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 22.2
+      "outlier": 21.9
     },
     {
       "id": "18051845837820521",
@@ -497,7 +531,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 19.1
+      "outlier": 18.9
     },
     {
       "id": "18133245676874910",
@@ -602,7 +636,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.7
+      "outlier": 4.6
     },
     {
       "id": "18644871331033416",
@@ -617,7 +651,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.7
+      "outlier": 3.6
     },
     {
       "id": "18286269412294654",
@@ -677,7 +711,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 13.2
+      "outlier": 13.1
     },
     {
       "id": "18140405227713723",
@@ -797,7 +831,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 14.6
+      "outlier": 14.5
     },
     {
       "id": "18102552128182568",
@@ -873,36 +907,6 @@
       "quotes": 0,
       "shares": 0,
       "outlier": 0.4
-    },
-    {
-      "id": "18169325488484123",
-      "queue_id": "2026-11-03-1405",
-      "type": "poll",
-      "at": "2026-11-03T11:05:01+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfRrs8NG8S0",
-      "title": "Опрос: mid",
-      "views": 12,
-      "likes": 1,
-      "replies": 1,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.2
-    },
-    {
-      "id": "18112335422351370",
-      "queue_id": null,
-      "type": "post",
-      "at": "2026-11-03T09:01:29+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfRgyNKCLHn",
-      "title": "Учишь английский, чтобы говорить, а не чтобы сдать тест? Тог",
-      "views": 100,
-      "likes": 2,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 1.9
     }
   ]
 }
