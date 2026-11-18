@@ -1,14 +1,14 @@
 # Статистика Threads @we_yapp
 
-Обновлено 17.11, 14:14 МСК. Подписчиков: 36. Медиана просмотров (посты старше 48 ч): 49.5.
+Обновлено 18.11, 13:46 МСК. Подписчиков: 36. Медиана просмотров (посты старше 48 ч): 49.5.
 «x медианы» - во сколько раз пост обошёл обычный пост. * - вышел меньше 48 ч назад, ещё набирает.
 Тип: post - текст, poll - опрос, thread - тред с продолжением (цифры только по первому посту).
 
 | Вышел (МСК) | Тип | Просмотры | x медианы | Лайки | Ответы | Репосты | Цитаты | Поделились | Пост |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 15.11, 19:35* | thread | 18 | 0.4 | 0 | 6 | 0 | 0 | 0 | [Затянувшийся B1 (тред)](https://www.threads.com/@we_yapp/post/DfxK21AFGiH) |
-| 15.11, 17:05* | post | 109 | 2.2 | 0 | 0 | 0 | 0 | 0 | [Книга на английском](https://www.threads.com/@we_yapp/post/Dfw507FFRJR) |
-| 15.11, 12:30 | poll | 28 | 0.6 | 1 | 1 | 0 | 0 | 0 | [Опрос salty](https://www.threads.com/@we_yapp/post/DfwaV16FbmH) |
+| 15.11, 19:35 | thread | 18 | 0.4 | 0 | 6 | 0 | 0 | 0 | [Затянувшийся B1 (тред)](https://www.threads.com/@we_yapp/post/DfxK21AFGiH) |
+| 15.11, 17:05 | post | 111 | 2.2 | 0 | 0 | 0 | 0 | 0 | [Книга на английском](https://www.threads.com/@we_yapp/post/Dfw507FFRJR) |
+| 15.11, 12:30 | poll | 29 | 0.6 | 1 | 1 | 0 | 0 | 0 | [Опрос salty](https://www.threads.com/@we_yapp/post/DfwaV16FbmH) |
 | 15.11, 10:35 | post | 13 | 0.3 | 0 | 0 | 0 | 0 | 0 | [Pajama day](https://www.threads.com/@we_yapp/post/DfwNH3RFqa7) |
 | 14.11, 19:30 | thread | 54 | 1.1 | 0 | 6 | 0 | 0 | 0 | [Как сказать нет (тред)](https://www.threads.com/@we_yapp/post/DfuleFSEQvb) |
 | 14.11, 17:00 | post | 27 | 0.5 | 0 | 0 | 0 | 0 | 0 | [Первая фраза в поездку](https://www.threads.com/@we_yapp/post/DfuUevVkTeU) |
@@ -16,7 +16,7 @@
 | 14.11, 10:30 | post | 45 | 0.9 | 1 | 0 | 0 | 0 | 0 | [Слово дня toasty](https://www.threads.com/@we_yapp/post/DftnqI_ESu3) |
 | 13.11, 20:00 | thread | 267 | 5.4 | 1 | 8 | 0 | 0 | 0 | [Канадский сленг (тред)](https://www.threads.com/@we_yapp/post/DfsEG-3FPOm) |
 | 13.11, 17:30 | post | 72 | 1.5 | 0 | 0 | 0 | 0 | 0 | [Слово без объяснения](https://www.threads.com/@we_yapp/post/DfrzAchlCe9) |
-| 13.11, 12:50 | poll | 45 | 0.9 | 0 | 1 | 0 | 0 | 0 | [Опрос hit the hay](https://www.threads.com/@we_yapp/post/DfrS5synNFc) |
+| 13.11, 12:50 | poll | 47 | 0.9 | 0 | 1 | 0 | 0 | 0 | [Опрос hit the hay](https://www.threads.com/@we_yapp/post/DfrS5synNFc) |
 | 13.11, 11:00 | post | 38 | 0.8 | 1 | 0 | 0 | 0 | 0 | [Тьфу-тьфу-тьфу](https://www.threads.com/@we_yapp/post/DfrGU7jHEUD) |
 | 12.11, 20:10 | thread | 29 | 0.6 | 1 | 6 | 0 | 0 | 0 | [Как вежливо перебить (тред)](https://www.threads.com/@we_yapp/post/DfpglwWFmE_) |
 | 12.11, 17:35 | post | 242 | 4.9 | 2 | 6 | 0 | 0 | 0 | [Песня наугад](https://www.threads.com/@we_yapp/post/DfpOtg7m-V6) |
@@ -27,7 +27,7 @@
 | 11.11, 12:45 | poll | 34 | 0.7 | 2 | 1 | 0 | 0 | 0 | [Опрос slaps](https://www.threads.com/@we_yapp/post/DfmIt2NFe_F) |
 | 11.11, 11:05 | post | 54 | 1.1 | 1 | 0 | 0 | 0 | 0 | [Заедать стресс](https://www.threads.com/@we_yapp/post/Dfl9Y_KlQsZ) |
 | 10.11, 20:00 | thread | 1163 | 23.5 | 5 | 15 | 0 | 0 | 1 | [Ирландский сленг (тред)](https://www.threads.com/@we_yapp/post/DfkVwsilP21) |
-| 10.11, 17:30 | post | 186 | 3.8 | 1 | 2 | 0 | 0 | 0 | [Акцент из кино](https://www.threads.com/@we_yapp/post/DfkEkEaG6Ux) |
+| 10.11, 17:30 | post | 187 | 3.8 | 1 | 2 | 0 | 0 | 0 | [Акцент из кино](https://www.threads.com/@we_yapp/post/DfkEkEaG6Ux) |
 | 10.11, 12:55 | poll | 18 | 0.4 | 1 | 1 | 0 | 0 | 0 | [Опрос under the weather](https://www.threads.com/@we_yapp/post/DfjlM49G7bB) |
 | 10.11, 11:00 | post | 162 | 3.3 | 3 | 6 | 0 | 0 | 0 | [Вырубиться](https://www.threads.com/@we_yapp/post/DfjYBM3G0bH) |
 | 09.11, 20:05 | thread | 1001 | 20.2 | 3 | 6 | 0 | 0 | 0 | [Признаки C1 (тред)](https://www.threads.com/@we_yapp/post/DfhxhwPGlOT) |
@@ -42,7 +42,7 @@
 | 07.11, 17:30 | post | 86 | 1.7 | 1 | 0 | 0 | 0 | 0 | [Comfort movie](https://www.threads.com/@we_yapp/post/DfcWVxElu75) |
 | 07.11, 13:35 | poll | 67 | 1.4 | 0 | 3 | 0 | 0 | 0 | [Опрос: I'm down](https://www.threads.com/@we_yapp/post/Dfb7ZfpFpZW) |
 | 07.11, 10:30 | post | 284 | 5.7 | 11 | 4 | 0 | 0 | 1 | [Слово дня: snug](https://www.threads.com/@we_yapp/post/DfbmFjTlr05) |
-| 06.11, 20:00 | thread | 694 | 14 | 4 | 18 | 0 | 0 | 0 | [Австралийский сленг (тред)](https://www.threads.com/@we_yapp/post/DfaCkj3FF-E) |
+| 06.11, 20:00 | thread | 695 | 14 | 4 | 18 | 0 | 0 | 0 | [Австралийский сленг (тред)](https://www.threads.com/@we_yapp/post/DfaCkj3FF-E) |
 | 06.11, 17:30 | post | 31 | 0.6 | 0 | 0 | 0 | 0 | 0 | [Самое нелепое слово](https://www.threads.com/@we_yapp/post/DfZxboRG3eK) |
 | 06.11, 14:00 | poll | 31 | 0.6 | 1 | 5 | 0 | 0 | 0 | [Опрос: ghosted](https://www.threads.com/@we_yapp/post/DfZZ_EIG1XO) |
 | 06.11, 11:00 | post | 47 | 0.9 | 0 | 0 | 0 | 0 | 0 | [TGIF](https://www.threads.com/@we_yapp/post/DfZEtbkFcLO) |
