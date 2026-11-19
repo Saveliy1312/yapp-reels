@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-18T10:46:20.711Z",
+  "updated_at": "2026-11-19T10:47:39.701Z",
   "username": "we_yapp",
   "followers_count": 36,
-  "median_views": 49.5,
+  "median_views": 53,
   "followers": [
     {
       "date": "2026-10-10",
@@ -163,9 +163,43 @@
     {
       "date": "2026-11-18",
       "count": 36
+    },
+    {
+      "date": "2026-11-19",
+      "count": 36
     }
   ],
   "posts": [
+    {
+      "id": "18039955832895385",
+      "queue_id": "2026-11-19-1248",
+      "type": "poll",
+      "at": "2026-11-19T09:48:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df6vbe0G1Iq",
+      "title": "Опрос rain check",
+      "views": 7,
+      "likes": 0,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.1
+    },
+    {
+      "id": "18134558629692229",
+      "queue_id": "2026-11-19-1104",
+      "type": "post",
+      "at": "2026-11-19T08:04:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df6jkqKG60K",
+      "title": "Запасной будильник",
+      "views": 14,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
     {
       "id": "18161185063512214",
       "queue_id": "2026-11-15-1935",
@@ -173,7 +207,7 @@
       "at": "2026-11-15T16:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfxK21AFGiH",
       "title": "Затянувшийся B1 (тред)",
-      "views": 18,
+      "views": 19,
       "likes": 0,
       "replies": 6,
       "reposts": 0,
@@ -188,13 +222,13 @@
       "at": "2026-11-15T14:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfw507FFRJR",
       "title": "Книга на английском",
-      "views": 111,
+      "views": 112,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.2
+      "outlier": 2.1
     },
     {
       "id": "17956202685336649",
@@ -203,7 +237,7 @@
       "at": "2026-11-15T09:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfwaV16FbmH",
       "title": "Опрос salty",
-      "views": 29,
+      "views": 30,
       "likes": 1,
       "replies": 1,
       "reposts": 0,
@@ -224,7 +258,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "17996770857059438",
@@ -239,7 +273,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1
     },
     {
       "id": "18074905823590327",
@@ -284,7 +318,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18182910808451545",
@@ -299,7 +333,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5.4
+      "outlier": 5
     },
     {
       "id": "18131414555510475",
@@ -314,7 +348,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.5
+      "outlier": 1.4
     },
     {
       "id": "18125323390821846",
@@ -344,7 +378,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 0.7
     },
     {
       "id": "18222363454355436",
@@ -359,7 +393,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.5
     },
     {
       "id": "18168243571510584",
@@ -374,7 +408,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.9
+      "outlier": 4.6
     },
     {
       "id": "18133285495789096",
@@ -404,7 +438,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.3
     },
     {
       "id": "18083607233343065",
@@ -419,7 +453,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.9
+      "outlier": 2.8
     },
     {
       "id": "18015489662760971",
@@ -434,7 +468,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18130748350864519",
@@ -449,7 +483,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.6
     },
     {
       "id": "17989304972887123",
@@ -464,7 +498,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1
     },
     {
       "id": "18387500197234138",
@@ -473,13 +507,13 @@
       "at": "2026-11-10T17:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfkVwsilP21",
       "title": "Ирландский сленг (тред)",
-      "views": 1163,
+      "views": 1165,
       "likes": 5,
       "replies": 15,
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 23.5
+      "outlier": 22
     },
     {
       "id": "18051845837820521",
@@ -494,7 +528,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.8
+      "outlier": 3.5
     },
     {
       "id": "18102701954410785",
@@ -509,7 +543,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.3
     },
     {
       "id": "18125288428927792",
@@ -524,7 +558,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
+      "outlier": 3.1
     },
     {
       "id": "18059039687595046",
@@ -539,7 +573,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 20.2
+      "outlier": 18.9
     },
     {
       "id": "18133245676874910",
@@ -554,7 +588,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.2
+      "outlier": 3
     },
     {
       "id": "17949720858070980",
@@ -584,7 +618,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.6
+      "outlier": 3.4
     },
     {
       "id": "18166035454498840",
@@ -614,7 +648,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.6
     },
     {
       "id": "17927114457432728",
@@ -629,7 +663,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.6
     },
     {
       "id": "18116923088581676",
@@ -644,7 +678,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5
+      "outlier": 4.6
     },
     {
       "id": "18644871331033416",
@@ -659,7 +693,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.9
+      "outlier": 3.6
     },
     {
       "id": "18286269412294654",
@@ -674,7 +708,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.7
+      "outlier": 1.6
     },
     {
       "id": "18121638698471734",
@@ -689,7 +723,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.3
     },
     {
       "id": "18126966064979040",
@@ -704,7 +738,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 5.7
+      "outlier": 5.4
     },
     {
       "id": "18016853537969704",
@@ -719,7 +753,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 14
+      "outlier": 13.1
     },
     {
       "id": "18140405227713723",
@@ -779,7 +813,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.3
     },
     {
       "id": "18138071905672044",
@@ -809,7 +843,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.2
     },
     {
       "id": "18429615766151384",
@@ -839,7 +873,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 15.5
+      "outlier": 14.5
     },
     {
       "id": "18102552128182568",
@@ -854,7 +888,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.9
+      "outlier": 0.8
     },
     {
       "id": "18448978603131096",
@@ -884,37 +918,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 1.1
-    },
-    {
-      "id": "18214744396365406",
-      "queue_id": "2026-11-03-2010",
-      "type": "thread",
-      "at": "2026-11-03T17:10:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfSVcdHm3B5",
-      "title": "Фразы из «Друзей» (тред)",
-      "views": 21,
-      "likes": 0,
-      "replies": 6,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.4
-    },
-    {
-      "id": "18105855302373516",
-      "queue_id": "2026-11-03-1735",
-      "type": "post",
-      "at": "2026-11-03T14:35:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfSDqttEU0-",
-      "title": "Акцент и молчание",
-      "views": 19,
-      "likes": 1,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.4
+      "outlier": 1
     }
   ]
 }
