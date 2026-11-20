@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-19T10:47:39.701Z",
+  "updated_at": "2026-11-20T10:36:16.512Z",
   "username": "we_yapp",
-  "followers_count": 36,
-  "median_views": 53,
+  "followers_count": 37,
+  "median_views": 54,
   "followers": [
     {
       "date": "2026-10-10",
@@ -167,16 +167,20 @@
     {
       "date": "2026-11-19",
       "count": 36
+    },
+    {
+      "date": "2026-11-20",
+      "count": 37
     }
   ],
   "posts": [
     {
-      "id": "18039955832895385",
-      "queue_id": "2026-11-19-1248",
+      "id": "18069463127529083",
+      "queue_id": "2026-11-20-1254",
       "type": "poll",
-      "at": "2026-11-19T09:48:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/Df6vbe0G1Iq",
-      "title": "Опрос rain check",
+      "at": "2026-11-20T09:54:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df9VB33FcZ3",
+      "title": "Опрос scoot over",
       "views": 7,
       "likes": 0,
       "replies": 1,
@@ -186,13 +190,73 @@
       "outlier": 0.1
     },
     {
+      "id": "18091514324291374",
+      "queue_id": "2026-11-20-1057",
+      "type": "post",
+      "at": "2026-11-20T07:57:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df9Hi2MFXV3",
+      "title": "Еле успеть на автобус",
+      "views": 19,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.4
+    },
+    {
+      "id": "18095096279236303",
+      "queue_id": "2026-11-19-2007",
+      "type": "thread",
+      "at": "2026-11-19T17:07:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df7htfPkUEu",
+      "title": "На выходные в Новой Зеландии",
+      "views": 170,
+      "likes": 0,
+      "replies": 7,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 3.1
+    },
+    {
+      "id": "18352018582282677",
+      "queue_id": "2026-11-19-1733",
+      "type": "post",
+      "at": "2026-11-19T14:33:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df7QC5REcfT",
+      "title": "Фраза из мультфильма",
+      "views": 60,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 1.1
+    },
+    {
+      "id": "18039955832895385",
+      "queue_id": "2026-11-19-1248",
+      "type": "poll",
+      "at": "2026-11-19T09:48:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/Df6vbe0G1Iq",
+      "title": "Опрос rain check",
+      "views": 41,
+      "likes": 0,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.8
+    },
+    {
       "id": "18134558629692229",
       "queue_id": "2026-11-19-1104",
       "type": "post",
       "at": "2026-11-19T08:04:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Df6jkqKG60K",
       "title": "Запасной будильник",
-      "views": 14,
+      "views": 15,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
@@ -327,7 +391,7 @@
       "at": "2026-11-13T17:00:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfsEG-3FPOm",
       "title": "Канадский сленг (тред)",
-      "views": 267,
+      "views": 268,
       "likes": 1,
       "replies": 8,
       "reposts": 0,
@@ -348,7 +412,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.3
     },
     {
       "id": "18125323390821846",
@@ -402,13 +466,13 @@
       "at": "2026-11-12T14:35:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfpOtg7m-V6",
       "title": "Песня наугад",
-      "views": 242,
+      "views": 244,
       "likes": 2,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.6
+      "outlier": 4.5
     },
     {
       "id": "18133285495789096",
@@ -453,7 +517,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.8
+      "outlier": 2.7
     },
     {
       "id": "18015489662760971",
@@ -513,7 +577,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 22
+      "outlier": 21.6
     },
     {
       "id": "18051845837820521",
@@ -558,7 +622,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.1
+      "outlier": 3
     },
     {
       "id": "18059039687595046",
@@ -573,7 +637,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 18.9
+      "outlier": 18.5
     },
     {
       "id": "18133245676874910",
@@ -588,7 +652,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3
+      "outlier": 2.9
     },
     {
       "id": "17949720858070980",
@@ -618,7 +682,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.4
+      "outlier": 3.3
     },
     {
       "id": "18166035454498840",
@@ -723,7 +787,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.2
     },
     {
       "id": "18126966064979040",
@@ -738,7 +802,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 5.4
+      "outlier": 5.3
     },
     {
       "id": "18016853537969704",
@@ -753,7 +817,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 13.1
+      "outlier": 12.9
     },
     {
       "id": "18140405227713723",
@@ -807,7 +871,7 @@
       "at": "2026-11-05T17:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfXecyYlXDX",
       "title": "Вопросы для small talk (тред)",
-      "views": 69,
+      "views": 70,
       "likes": 2,
       "replies": 6,
       "reposts": 0,
@@ -859,66 +923,6 @@
       "quotes": 0,
       "shares": 0,
       "outlier": 0.6
-    },
-    {
-      "id": "18126615955916211",
-      "queue_id": "2026-11-04-2000",
-      "type": "thread",
-      "at": "2026-11-04T17:00:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfU49hSlLPu",
-      "title": "Признаки B1 (тред)",
-      "views": 766,
-      "likes": 1,
-      "replies": 6,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 1,
-      "outlier": 14.5
-    },
-    {
-      "id": "18102552128182568",
-      "queue_id": "2026-11-04-1730",
-      "type": "post",
-      "at": "2026-11-04T14:30:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfUn8MrlK29",
-      "title": "Слово, которое страшно сказать",
-      "views": 43,
-      "likes": 1,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.8
-    },
-    {
-      "id": "18448978603131096",
-      "queue_id": "2026-11-04-1330",
-      "type": "poll",
-      "at": "2026-11-04T10:30:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfUMW13FQ2Z",
-      "title": "Опрос: I'm beat",
-      "views": 40,
-      "likes": 0,
-      "replies": 1,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.8
-    },
-    {
-      "id": "18108920702206467",
-      "queue_id": "2026-11-04-1040",
-      "type": "post",
-      "at": "2026-11-04T07:40:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfT49YpkYWw",
-      "title": "Перезагрузиться",
-      "views": 52,
-      "likes": 1,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 1,
-      "outlier": 1
     }
   ]
 }
