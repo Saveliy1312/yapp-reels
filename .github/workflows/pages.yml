@@ -10,7 +10,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: read
   contents: read
   pages: write
   id-token: write
@@ -56,20 +55,8 @@ jobs:
           for f in site/media/*.png; do convert "$f" -resize 180x -quality 80 "site/media/thumbs/$(basename "${f%.png}").jpg"; done
           ls site/media | wc -l
           du -sh site
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: site
-      - name: Дождаться появления сборки в GitHub API
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for attempt in {1..12}; do
-            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages"               --jq '.artifacts[] | select(.expired == false) | .id' | grep -q '[0-9]'; then
-              exit 0
-            fi
-            sleep 5
-          done
-          echo "::error::Сборка github-pages не появилась в GitHub API"
-          exit 1
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
