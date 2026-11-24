@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-23T11:21:27.375Z",
+  "updated_at": "2026-11-24T12:57:47.778Z",
   "username": "we_yapp",
-  "followers_count": 37,
-  "median_views": 53.5,
+  "followers_count": 38,
+  "median_views": 45,
   "followers": [
     {
       "date": "2026-10-10",
@@ -183,9 +183,73 @@
     {
       "date": "2026-11-23",
       "count": 37
+    },
+    {
+      "date": "2026-11-24",
+      "count": 38
     }
   ],
   "posts": [
+    {
+      "id": "17872112316662393",
+      "queue_id": "2026-11-24-1258",
+      "type": "poll",
+      "at": "2026-11-24T09:58:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DgHosovlSr-",
+      "title": "Опрос sleep on it",
+      "views": 13,
+      "likes": 1,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
+      "id": "18111970085579179",
+      "queue_id": "2026-11-24-1059",
+      "type": "post",
+      "at": "2026-11-24T07:59:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DgHbEuBlmhV",
+      "title": "Забежать в гости",
+      "views": 38,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.8
+    },
+    {
+      "id": "18133812370816146",
+      "queue_id": "2026-11-23-2004",
+      "type": "thread",
+      "at": "2026-11-23T17:04:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DgF0oNdkfry",
+      "title": "Когда смысл слышно по голосу",
+      "views": 15,
+      "likes": 0,
+      "replies": 6,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
+    {
+      "id": "17972016990195108",
+      "queue_id": "2026-11-23-1737",
+      "type": "post",
+      "at": "2026-11-23T14:37:00+0000",
+      "permalink": "https://www.threads.com/@we_yapp/post/DgFjqTeEQhO",
+      "title": "Первая игра без перевода",
+      "views": 12,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "shares": 0,
+      "outlier": 0.3
+    },
     {
       "id": "17913851514591884",
       "queue_id": "2026-11-23-1246",
@@ -193,13 +257,13 @@
       "at": "2026-11-23T09:46:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DgFCZJllZ4Q",
       "title": "Опрос my treat",
-      "views": 32,
-      "likes": 1,
+      "views": 60,
+      "likes": 3,
       "replies": 1,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 1.3
     },
     {
       "id": "18135496402839252",
@@ -208,13 +272,13 @@
       "at": "2026-11-23T08:02:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DgE2eUPHAul",
       "title": "Передумать на полпути",
-      "views": 13,
+      "views": 16,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.4
     },
     {
       "id": "18122576494769567",
@@ -223,13 +287,13 @@
       "at": "2026-11-22T16:28:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DgDLtREG84Y",
       "title": "Шотландские слова в диалогах",
-      "views": 62,
+      "views": 70,
       "likes": 0,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.2
+      "outlier": 1.6
     },
     {
       "id": "18087026363709370",
@@ -244,7 +308,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18028377380932898",
@@ -259,7 +323,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18128085298913449",
@@ -268,13 +332,13 @@
       "at": "2026-11-22T07:28:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DgCN3tykYGi",
       "title": "Придержать дверь",
-      "views": 20,
+      "views": 21,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.4
+      "outlier": 0.5
     },
     {
       "id": "17990570937024329",
@@ -283,13 +347,13 @@
       "at": "2026-11-21T16:33:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DgAnfpMm3yW",
       "title": "Пять реплик для кофейни",
-      "views": 44,
+      "views": 45,
       "likes": 0,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "17995441983104672",
@@ -313,13 +377,13 @@
       "at": "2026-11-21T09:27:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Df_2vKfFR3Q",
       "title": "Опрос pitcher",
-      "views": 13,
+      "views": 14,
       "likes": 0,
       "replies": 1,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "17905271664387223",
@@ -334,7 +398,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.2
     },
     {
       "id": "18184731580431904",
@@ -349,7 +413,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "17914178178595035",
@@ -358,13 +422,13 @@
       "at": "2026-11-20T14:28:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Df90W7MlpVx",
       "title": "Послышалось в песне",
-      "views": 53,
+      "views": 55,
       "likes": 1,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.2
     },
     {
       "id": "18069463127529083",
@@ -379,7 +443,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18091514324291374",
@@ -394,7 +458,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.6
     },
     {
       "id": "18095096279236303",
@@ -409,7 +473,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.4
+      "outlier": 4
     },
     {
       "id": "18352018582282677",
@@ -418,13 +482,13 @@
       "at": "2026-11-19T14:33:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Df7QC5REcfT",
       "title": "Фраза из мультфильма",
-      "views": 61,
+      "views": 62,
       "likes": 0,
       "replies": 0,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.1
+      "outlier": 1.4
     },
     {
       "id": "18039955832895385",
@@ -433,13 +497,13 @@
       "at": "2026-11-19T09:48:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Df6vbe0G1Iq",
       "title": "Опрос rain check",
-      "views": 73,
+      "views": 74,
       "likes": 1,
       "replies": 3,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.4
+      "outlier": 1.6
     },
     {
       "id": "18134558629692229",
@@ -454,7 +518,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18161185063512214",
@@ -484,7 +548,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.1
+      "outlier": 2.5
     },
     {
       "id": "17956202685336649",
@@ -499,7 +563,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18145164580716403",
@@ -514,7 +578,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "17996770857059438",
@@ -529,7 +593,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.2
     },
     {
       "id": "18074905823590327",
@@ -544,7 +608,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.5
+      "outlier": 0.6
     },
     {
       "id": "18119460674031881",
@@ -559,7 +623,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.2
+      "outlier": 0.3
     },
     {
       "id": "18056948501811806",
@@ -574,7 +638,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18182910808451545",
@@ -589,7 +653,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 5
+      "outlier": 6
     },
     {
       "id": "18131414555510475",
@@ -604,7 +668,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.6
     },
     {
       "id": "18125323390821846",
@@ -619,7 +683,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.1
     },
     {
       "id": "17995325637025405",
@@ -634,7 +698,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.7
+      "outlier": 0.8
     },
     {
       "id": "18222363454355436",
@@ -649,7 +713,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.7
     },
     {
       "id": "18168243571510584",
@@ -664,7 +728,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 4.6
+      "outlier": 5.4
     },
     {
       "id": "18133285495789096",
@@ -694,7 +758,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1.3
+      "outlier": 1.5
     },
     {
       "id": "18083607233343065",
@@ -709,7 +773,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 2.7
+      "outlier": 3.2
     },
     {
       "id": "18015489662760971",
@@ -724,7 +788,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.8
+      "outlier": 1
     },
     {
       "id": "18130748350864519",
@@ -739,7 +803,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.6
+      "outlier": 0.8
     },
     {
       "id": "17989304972887123",
@@ -754,7 +818,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 1
+      "outlier": 1.2
     },
     {
       "id": "18387500197234138",
@@ -769,7 +833,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 1,
-      "outlier": 21.8
+      "outlier": 25.9
     },
     {
       "id": "18051845837820521",
@@ -778,13 +842,13 @@
       "at": "2026-11-10T14:30:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfkEkEaG6Ux",
       "title": "Акцент из кино",
-      "views": 191,
+      "views": 192,
       "likes": 1,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.6
+      "outlier": 4.3
     },
     {
       "id": "18102701954410785",
@@ -799,7 +863,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 0.3
+      "outlier": 0.4
     },
     {
       "id": "18125288428927792",
@@ -814,7 +878,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3
+      "outlier": 3.6
     },
     {
       "id": "18059039687595046",
@@ -823,13 +887,13 @@
       "at": "2026-11-09T17:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/DfhxhwPGlOT",
       "title": "Признаки C1 (тред)",
-      "views": 1001,
+      "views": 1004,
       "likes": 3,
       "replies": 6,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 18.7
+      "outlier": 22.3
     },
     {
       "id": "18133245676874910",
@@ -844,7 +908,7 @@
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3
+      "outlier": 3.5
     },
     {
       "id": "17949720858070980",
@@ -868,73 +932,13 @@
       "at": "2026-11-09T08:05:00+0000",
       "permalink": "https://www.threads.com/@we_yapp/post/Dfgz1h0G_om",
       "title": "Мне лень",
-      "views": 178,
+      "views": 179,
       "likes": 3,
       "replies": 2,
       "reposts": 0,
       "quotes": 0,
       "shares": 0,
-      "outlier": 3.3
-    },
-    {
-      "id": "18166035454498840",
-      "queue_id": "2026-11-08-2000",
-      "type": "thread",
-      "at": "2026-11-08T17:00:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DffMKSSm7vl",
-      "title": "Неделя в одном диалоге (тред)",
-      "views": 11,
-      "likes": 0,
-      "replies": 5,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 0.2
-    },
-    {
-      "id": "18089638265300684",
-      "queue_id": "2026-11-08-1730",
-      "type": "post",
-      "at": "2026-11-08T14:30:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/Dfe7EB9ldGy",
-      "title": "Фраза недели",
-      "views": 86,
-      "likes": 0,
-      "replies": 0,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 1.6
-    },
-    {
-      "id": "17927114457432728",
-      "queue_id": "2026-11-08-1330",
-      "type": "poll",
-      "at": "2026-11-08T10:30:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/Dfefo2AGxAS",
-      "title": "Опрос: an arm and a leg",
-      "views": 86,
-      "likes": 1,
-      "replies": 1,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 1.6
-    },
-    {
-      "id": "18116923088581676",
-      "queue_id": "2026-11-08-1035",
-      "type": "post",
-      "at": "2026-11-08T07:35:00+0000",
-      "permalink": "https://www.threads.com/@we_yapp/post/DfeLmOuG4IM",
-      "title": "Не торопись",
-      "views": 246,
-      "likes": 4,
-      "replies": 2,
-      "reposts": 0,
-      "quotes": 0,
-      "shares": 0,
-      "outlier": 4.6
+      "outlier": 4
     }
   ]
 }
