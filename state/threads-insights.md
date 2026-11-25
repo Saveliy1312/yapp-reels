@@ -1,19 +1,23 @@
 # Статистика Threads @we_yapp
 
-Обновлено 24.11, 15:57 МСК. Подписчиков: 38. Медиана просмотров (посты старше 48 ч): 45.
+Обновлено 25.11, 14:47 МСК. Подписчиков: 39. Медиана просмотров (посты старше 48 ч): 45.
 «x медианы» - во сколько раз пост обошёл обычный пост. * - вышел меньше 48 ч назад, ещё набирает.
 Тип: post - текст, poll - опрос, thread - тред с продолжением (цифры только по первому посту).
 
 | Вышел (МСК) | Тип | Просмотры | x медианы | Лайки | Ответы | Репосты | Цитаты | Поделились | Пост |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 24.11, 12:58* | poll | 13 | 0.3 | 1 | 2 | 0 | 0 | 0 | [Опрос sleep on it](https://www.threads.com/@we_yapp/post/DgHosovlSr-) |
-| 24.11, 10:59* | post | 38 | 0.8 | 1 | 0 | 0 | 0 | 0 | [Забежать в гости](https://www.threads.com/@we_yapp/post/DgHbEuBlmhV) |
-| 23.11, 20:04* | thread | 15 | 0.3 | 0 | 6 | 0 | 0 | 0 | [Когда смысл слышно по голосу](https://www.threads.com/@we_yapp/post/DgF0oNdkfry) |
-| 23.11, 17:37* | post | 12 | 0.3 | 0 | 0 | 0 | 0 | 0 | [Первая игра без перевода](https://www.threads.com/@we_yapp/post/DgFjqTeEQhO) |
-| 23.11, 12:46* | poll | 60 | 1.3 | 3 | 1 | 0 | 0 | 0 | [Опрос my treat](https://www.threads.com/@we_yapp/post/DgFCZJllZ4Q) |
-| 23.11, 11:02* | post | 16 | 0.4 | 1 | 0 | 0 | 0 | 0 | [Передумать на полпути](https://www.threads.com/@we_yapp/post/DgE2eUPHAul) |
-| 22.11, 19:28* | thread | 70 | 1.6 | 0 | 6 | 0 | 0 | 0 | [Шотландские слова в диалогах](https://www.threads.com/@we_yapp/post/DgDLtREG84Y) |
-| 22.11, 16:57* | post | 30 | 0.7 | 0 | 2 | 0 | 0 | 0 | [Слово любимого персонажа](https://www.threads.com/@we_yapp/post/DgC6gQ_Gw1f) |
+| 25.11, 12:51* | poll | 8 | 0.2 | 1 | 1 | 0 | 0 | 0 | [Опрос play it by ear](https://www.threads.com/@we_yapp/post/DgKMrFXkaVq) |
+| 25.11, 11:06* | post | 15 | 0.3 | 1 | 0 | 0 | 0 | 0 | [Потерять счёт времени](https://www.threads.com/@we_yapp/post/DgKAmXxFRFr) |
+| 24.11, 19:58* | thread | 116 | 2.6 | 0 | 6 | 0 | 0 | 0 | [Бытовые диалоги для A2](https://www.threads.com/@we_yapp/post/DgIYnzEFPJu) |
+| 24.11, 17:26* | post | 80 | 1.8 | 0 | 2 | 0 | 0 | 0 | [Фильм с неожиданным названием](https://www.threads.com/@we_yapp/post/DgIHS5cEfIU) |
+| 24.11, 12:58* | poll | 16 | 0.4 | 1 | 2 | 0 | 0 | 0 | [Опрос sleep on it](https://www.threads.com/@we_yapp/post/DgHosovlSr-) |
+| 24.11, 10:59* | post | 40 | 0.9 | 1 | 0 | 0 | 0 | 0 | [Забежать в гости](https://www.threads.com/@we_yapp/post/DgHbEuBlmhV) |
+| 23.11, 20:04* | thread | 20 | 0.4 | 0 | 6 | 0 | 0 | 0 | [Когда смысл слышно по голосу](https://www.threads.com/@we_yapp/post/DgF0oNdkfry) |
+| 23.11, 17:37* | post | 13 | 0.3 | 0 | 0 | 0 | 0 | 0 | [Первая игра без перевода](https://www.threads.com/@we_yapp/post/DgFjqTeEQhO) |
+| 23.11, 12:46 | poll | 81 | 1.8 | 3 | 1 | 0 | 0 | 0 | [Опрос my treat](https://www.threads.com/@we_yapp/post/DgFCZJllZ4Q) |
+| 23.11, 11:02 | post | 20 | 0.4 | 1 | 0 | 0 | 0 | 0 | [Передумать на полпути](https://www.threads.com/@we_yapp/post/DgE2eUPHAul) |
+| 22.11, 19:28 | thread | 70 | 1.6 | 0 | 6 | 0 | 0 | 0 | [Шотландские слова в диалогах](https://www.threads.com/@we_yapp/post/DgDLtREG84Y) |
+| 22.11, 16:57 | post | 30 | 0.7 | 0 | 2 | 0 | 0 | 0 | [Слово любимого персонажа](https://www.threads.com/@we_yapp/post/DgC6gQ_Gw1f) |
 | 22.11, 12:30 | poll | 16 | 0.4 | 1 | 1 | 0 | 0 | 0 | [Опрос fair enough](https://www.threads.com/@we_yapp/post/DgCbxNXlrFu) |
 | 22.11, 10:28 | post | 21 | 0.5 | 1 | 0 | 0 | 0 | 0 | [Придержать дверь](https://www.threads.com/@we_yapp/post/DgCN3tykYGi) |
 | 21.11, 19:33 | thread | 45 | 1 | 0 | 6 | 0 | 0 | 0 | [Пять реплик для кофейни](https://www.threads.com/@we_yapp/post/DgAnfpMm3yW) |
@@ -52,7 +56,3 @@
 | 10.11, 17:30 | post | 192 | 4.3 | 1 | 2 | 0 | 0 | 0 | [Акцент из кино](https://www.threads.com/@we_yapp/post/DfkEkEaG6Ux) |
 | 10.11, 12:55 | poll | 18 | 0.4 | 1 | 1 | 0 | 0 | 0 | [Опрос under the weather](https://www.threads.com/@we_yapp/post/DfjlM49G7bB) |
 | 10.11, 11:00 | post | 162 | 3.6 | 3 | 6 | 0 | 0 | 0 | [Вырубиться](https://www.threads.com/@we_yapp/post/DfjYBM3G0bH) |
-| 09.11, 20:05 | thread | 1004 | 22.3 | 3 | 6 | 0 | 0 | 0 | [Признаки C1 (тред)](https://www.threads.com/@we_yapp/post/DfhxhwPGlOT) |
-| 09.11, 17:35 | post | 158 | 3.5 | 3 | 7 | 0 | 0 | 0 | [Фраза из учебника](https://www.threads.com/@we_yapp/post/DfhgUXokcCc) |
-| 09.11, 12:50 | poll | 20 | 0.4 | 0 | 1 | 0 | 0 | 0 | [Опрос cold feet](https://www.threads.com/@we_yapp/post/Dfg_0_dGxUI) |
-| 09.11, 11:05 | post | 179 | 4 | 3 | 2 | 0 | 0 | 0 | [Мне лень](https://www.threads.com/@we_yapp/post/Dfgz1h0G_om) |
